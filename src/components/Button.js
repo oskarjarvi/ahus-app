@@ -28,7 +28,6 @@ componentDidMount(){
   render(){
     return (
       <div className="SignInButton">
-        Inlogg för arbetare
       {this.state.user ? (<HomeForWorkers />): (<Login />)}
       </div>
     )

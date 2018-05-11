@@ -1,0 +1,36 @@
+.Navbar {
+  height: 43px;
+  background-color: #6EC81E;
+  width: 344px;
+  position: fixed;
+  bottom: 0;
+}
+.Navbar.closed{
+  transition: 2s;
+}
+.Navbar.open {
+  height: 379px;
+  transition: 2s;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  list-style-type: none;
+  color: #FFFFFF;
+  font-family: "Chronicle Deck Cond";
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29px;
+}
+p {
+  height: 16px;
+  width: 140px;
+  color: #FFFFFF;
+  font-family: "Chronicle Deck Cond";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19px;
+}
