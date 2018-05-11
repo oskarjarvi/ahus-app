@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import Button from './Button';
-class Link extends Component {
+import './HamburgerIconStyle.css'
+class HamburgerIcon extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -14,14 +14,16 @@ class Link extends Component {
       })
     );
     }
+
   render(){
     return (
       <div className="SignInButton">
-      {this.state.toggle ? <Button />: <p onClick={this.eventHandler}>Inlogg för användare</p>}
-
+        <a className={this.state.toggle ? 'nav-toggle active' : 'nav-toggle '} onClick={this.eventHandler} >
+        <span></span>
+        </a>
       </div>
     )
   }
 }
 
-export default Link;
+export default HamburgerIcon;

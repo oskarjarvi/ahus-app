@@ -17,10 +17,9 @@ componentDidMount(){
     base.auth().onAuthStateChanged((user) => {
       if (user) {
         this.setState({ user });
-        // localStorage.setItem('user', user.uid);
+
       } else {
         this.setState({ user: null});
-        // localStorage.removeItem('user');
       }
     });
   }

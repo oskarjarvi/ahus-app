@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Link from '../Link'
+import HamburgerIcon from './NavbarContent/HamburgerIcon'
 import './index.css';
 class Navbar extends Component {
   constructor(props) {
@@ -30,6 +31,9 @@ class Navbar extends Component {
                     {this.state.toggle ?<Link onClick={this.eventHandler}/> : '' }
                     <button onClick={this.eventHandler}>navbar</button>
                   </ul> :  <button onClick={this.eventHandler}>navbar</button>}
+
+                  <HamburgerIcon  onClick={this.eventHandler}/>
+
         </div>
     );
   }
