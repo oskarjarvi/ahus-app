@@ -1,7 +1,14 @@
 import React, { Component } from 'react';
 import Link from '../Link'
-import HamburgerIcon from './NavbarContent/HamburgerIcon'
+import Search from './NavbarContent/Search'
+import YourCampus from './NavbarContent/YourCampus'
+import Information from './NavbarContent/Information'
+import Parking from './NavbarContent/Parking'
+import Houseguide from './NavbarContent/Houseguide'
+import AboutUs from './NavbarContent/AboutUs'
+
 import './index.css';
+
 class Navbar extends Component {
   constructor(props) {
     super(props);
@@ -19,20 +26,21 @@ class Navbar extends Component {
 
 
   render(){
+    console.log(this.state.toggle);
     return(
         <div  className={this.state.toggle ? 'Navbar open' : 'Navbar closed'}>
-          {this.state.toggle ? <ul>
-                    <li>Sök</li>
-                    <li>Ditt campus</li>
-                    <li>Hyresgästinformation</li>
-                    <li>Parkering</li>
-                    <li>Husguider</li>
+          {this.state.toggle ?
+            <ul>
+                    <Search />
+                    <YourCampus />
+                    <Information />
+                    <Parking />
+                    <Houseguide />
                     <li>Om oss</li>
                     {this.state.toggle ?<Link onClick={this.eventHandler}/> : '' }
-                    <button onClick={this.eventHandler}>navbar</button>
-                  </ul> :  <button onClick={this.eventHandler}>navbar</button>}
+                    <button className={this.state.toggle ? 'nav-toggle active' : 'nav-toggle '} onClick={this.eventHandler}><span></span></button>
+                  </ul> :  <button className={this.state.toggle ? 'nav-toggle ' : 'nav-toggle active'} onClick={this.eventHandler}><span></span></button>}
 
-                  <HamburgerIcon  onClick={this.eventHandler}/>
 
         </div>
     );
