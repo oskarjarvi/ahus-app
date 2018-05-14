@@ -39,9 +39,15 @@ p {
 span {
   top: 10px;
 }
-.nav-toggle { position: absolute; left: 45%; bottom: 8px; }
-
-.nav-toggle { cursor: pointer; padding: 10px 35px 16px 0px; }
+.nav-toggle {
+  position: absolute;
+  left: 45%;
+  bottom: 8px;
+  cursor: pointer;
+  padding: 10px 35px 16px 0px;
+  border: none;
+  background-color: transparent;
+}
 .nav-toggle span, .nav-toggle span:before, .nav-toggle span:after {
   cursor: pointer;
   border-radius: 1px;
