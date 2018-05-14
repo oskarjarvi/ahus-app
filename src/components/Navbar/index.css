@@ -1,9 +1,9 @@
 .Navbar {
   height: 43px;
   background-color: #6EC81E;
-  width: 344px;
+  width: 90%;
   position: fixed;
-  bottom: 0;
+  bottom: 16px;
 }
 .Navbar.closed{
   transition: 2s;
@@ -35,15 +35,18 @@ p {
   line-height: 19px;
 }
 
-
-.nav-toggle { position: absolute; left: 50%; top: 50%; }
+/* Hamburger icon */
+span {
+  top: 10px;
+}
+.nav-toggle { position: absolute; left: 45%; bottom: 8px; }
 
 .nav-toggle { cursor: pointer; padding: 10px 35px 16px 0px; }
 .nav-toggle span, .nav-toggle span:before, .nav-toggle span:after {
   cursor: pointer;
   border-radius: 1px;
-  height: 5px;
-  width: 35px;
+  height: 5.71px;
+  width: 31.38px;
   background: white;
   position: absolute;
   display: block;
@@ -57,7 +60,7 @@ p {
 }
 
 .nav-toggle span, .nav-toggle span:before, .nav-toggle span:after {
-  transition: all 500ms ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 .nav-toggle.active span {
   background-color: #6EC81E;

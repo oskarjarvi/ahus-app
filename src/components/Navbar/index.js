@@ -13,7 +13,7 @@ class Navbar extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      toggle: true
+      toggle: false
     };
     this.eventHandler = this.eventHandler.bind(this);
     }
@@ -31,16 +31,16 @@ class Navbar extends Component {
         <div  className={this.state.toggle ? 'Navbar open' : 'Navbar closed'}>
           {this.state.toggle ?
             <ul>
-                    <Search />
-                    <YourCampus />
-                    <Information />
-                    <Parking />
-                    <Houseguide />
-                    <li>Om oss</li>
-                    {this.state.toggle ?<Link onClick={this.eventHandler}/> : '' }
-                    <button className={this.state.toggle ? 'nav-toggle active' : 'nav-toggle '} onClick={this.eventHandler}><span></span></button>
-                  </ul> :  <button className={this.state.toggle ? 'nav-toggle ' : 'nav-toggle active'} onClick={this.eventHandler}><span></span></button>}
+              <Search />
+              <YourCampus />
+              <Information />
+              <Parking />
+              <Houseguide />
+              <AboutUs />
+              {this.state.toggle ?<Link onClick={this.eventHandler}/> : '' }
+            </ul> :  ''}
 
+          <button className={this.state.toggle ? 'nav-toggle active' : 'nav-toggle '} onClick={this.eventHandler}><span></span></button>
 
         </div>
     );
