@@ -1,13 +1,10 @@
-import React, { Component } from 'react';
-import Link from '../Link'
-import Search from './NavbarContent/Search'
-import YourCampus from './NavbarContent/YourCampus'
-import Information from './NavbarContent/Information'
-import Parking from './NavbarContent/Parking'
-import Houseguide from './NavbarContent/Houseguide'
-import AboutUs from './NavbarContent/AboutUs'
+import React, { Component } from "react";
+import Main from "../Main/Main";
+import HamburgerNavigation from "../Main/HamburgerNavigation";
 
-import './index.css';
+import { Link } from "react-router-dom";
+
+import "./index.css";
 
 class Navbar extends Component {
   constructor(props) {
@@ -16,33 +13,35 @@ class Navbar extends Component {
       toggle: false
     };
     this.eventHandler = this.eventHandler.bind(this);
-    }
-    eventHandler(event) {
-    this.setState((prevState) => ({
-        toggle: !prevState.toggle
-      })
-    );
-    }
-
-
-  render(){
+  }
+  eventHandler(event) {
+    this.setState(prevState => ({
+      toggle: !prevState.toggle
+    }));
+  }
+  // <Search />
+  // <YourCampus />
+  // <Information />
+  // <Parking />
+  // <Houseguide />
+  // <AboutUs />
+    // {this.state.toggle ? <Link onClick={this.eventHandler} /> : ""}
+  render() {
     console.log(this.state.toggle);
-    return(
-        <div  className={this.state.toggle ? 'Navbar open' : 'Navbar closed'}>
-          {this.state.toggle ?
-            <ul>
-              <Search />
-              <YourCampus />
-              <Information />
-              <Parking />
-              <Houseguide />
-              <AboutUs />
-              {this.state.toggle ?<Link onClick={this.eventHandler}/> : '' }
-            </ul> :  ''}
+    return (
+      <div className={this.state.toggle ? "Navbar open" : "Navbar closed"}>
+        {this.state.toggle ? (
+        <div><Main></Main>  <HamburgerNavigation></HamburgerNavigation></div> ) : ("")}
 
-          <button className={this.state.toggle ? 'nav-toggle active' : 'nav-toggle '} onClick={this.eventHandler}><span></span></button>
+        <button
+          className={this.state.toggle ? "nav-toggle active" : "nav-toggle "}
+          onClick={this.eventHandler}
+        >
+          <span />
+        </button>
 
-        </div>
+
+      </div>
     );
   }
 }
