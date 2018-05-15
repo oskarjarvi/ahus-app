@@ -31,7 +31,17 @@ class Navbar extends Component {
     return (
       <div className={this.state.toggle ? "Navbar open" : "Navbar closed"}>
         {this.state.toggle ? (
-        <div><Main></Main>  <HamburgerNavigation></HamburgerNavigation></div> ) : ("")}
+        <ul>
+          <li>Sök</li>
+          <li>Ditt Campus</li>
+          <li>Hyresgästinformation</li>
+          <li>Parkering</li>
+          <li>Husguider</li>
+          <li>Om oss</li>
+
+          <Main></Main>
+          <HamburgerNavigation></HamburgerNavigation>
+        </ul> ) : ("")}
 
         <button
           className={this.state.toggle ? "nav-toggle active" : "nav-toggle "}
