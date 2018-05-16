@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.SidebarMeny {
+  position: relative;
+  left: 2%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.SidebarMeny li {
+  color: white;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  line-height: 16px;
+}
+.SidebarLink  {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+	width: 104px;
+	height: 104px;
+}
+.HouseEvents{
+  background-color: #FFEB00;
+}
+.MyConnections{
+  background-color: #00953F;
+}
+.ErrorPage{
+  background-color: #0094BB;
+}
+
+.EventPage{
+  background-color: #EE7F00;
+}
+.Map{
+  background-color: #59539B;
+}
+.Extra{
+  border: 3px solid #6EC81E;
+}

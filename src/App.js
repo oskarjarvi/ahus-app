@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import TransitionGroup from "react-transition-group/TransitionGroup";
 import Main from './components/Main/Main';
 import Sidebar from './components/Sidebar/Sidebar';
-
+import StartPage from './StartPage';
 import Navigation from './components/Sidebar/Navigation';
 import { Link } from 'react-router-dom';
 

@@ -13,7 +13,7 @@
   transition: 2s;
 }
 
-ul {
+.StaticMenu {
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -25,15 +25,6 @@ ul {
   font-weight: 600;
   line-height: 29px;
 }
-/* p {
-  height: 16px;
-  width: 140px;
-  color: #FFFFFF;
-  font-family: "Chronicle Deck Cond";
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 19px;
-} */
 
 /* Hamburger icon */
 span {

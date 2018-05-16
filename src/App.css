@@ -3,7 +3,6 @@ html,body{
   margin: 0;
   height: 100%;
   width: 100%;
-  color: black!important;
 }
 .App {
   text-align: center;
@@ -13,26 +12,14 @@ html,body{
 }
 .TopBar {
     position: fixed;
-    top: 0;
+    bottom: 70px;
     left: 0;
-    color: tomato;
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
 }
 .TopBar a {
-    margin-right: 18px;
+    margin-right: 16px;
     text-decoration: none;
 }
-.animated-page-wrapper {
-    position: absolute;
-    top: 62px;
-    left: 0;
-    width: 100px;
-    height: 100px;
-}
 
-
-.page p {
-background-color: black;
+.page {
+  color: black;
 }
