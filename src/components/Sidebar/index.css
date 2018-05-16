@@ -2,27 +2,30 @@
     margin: 0;
     padding: 0;
 }
+.test a {
+  text-decoration: none;
+}
 .SidebarMeny {
-  position: relative;
-  left: 2%;
+  list-style-type: none;
+  padding-left: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 104px);
+  grid-template-rows: repeat(2, 104px);
+  grid-gap: 16px;
+}
+@media screen and (max-width: 350px) {
+  .SidebarMeny {
+    grid-template-columns: repeat(2, 104px);
+    grid-template-rows: repeat(3, 104px);
+  }
+}
+
+.SidebarLink {
+  height: 100%;
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
-}
-.SidebarMeny li {
-  color: white;
-  font-size: 12px;
-  font-weight: 600;
-  letter-spacing: 0.3px;
-  line-height: 16px;
-}
-.SidebarLink  {
-  display: flex;
   align-items: center;
-  justify-content: center;
-  margin-bottom: 16px;
-	width: 104px;
-	height: 104px;
+  color: #ffff;
 }
 .HouseEvents{
   background-color: #FFEB00;
@@ -41,5 +44,6 @@
   background-color: #59539B;
 }
 .Extra{
-  border: 3px solid #6EC81E;
+  color: #6EC81E;
+  box-shadow: inset 0px 0px 0px 3px #6EC81E;
 }

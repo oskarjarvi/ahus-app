@@ -20,11 +20,11 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
 
-        <div className="TopBar">
+        <div class="SidebarPosition">
         <Sidebar>
         </Sidebar>
         <Navigation></Navigation>
-          </div>
+        </div>
 
 
   </header>

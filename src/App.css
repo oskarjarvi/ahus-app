@@ -10,16 +10,11 @@ html,body{
   align-items: center;
   flex-direction: column;
 }
-.TopBar {
-    position: fixed;
-    bottom: 70px;
-    left: 0;
+.SidebarPosition{
+  position: fixed;
+  bottom: 86px;
+  left: 16px;
 }
-.TopBar a {
-    margin-right: 16px;
-    text-decoration: none;
-}
-
 .page {
   color: black;
 }
