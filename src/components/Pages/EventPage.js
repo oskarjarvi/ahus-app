@@ -1,13 +1,25 @@
 import React, { Component } from "react";
-import AnimatedWrapper from "../../AnimatedWrapper";
+import {CSSTransitionGroup} from "react-transition-group";
+import { Link } from 'react-router-dom';
 import '../../App.css';
 
-const EventPage = () => (   
-  <div className="page">
-    <h1>Eventpage</h1>
-    <p>Hello FVÄLDMVCMSM a eventpage!</p>
-   </div>
- )
+class EventPage extends Component {
+  render() {
+    return (
+      <CSSTransitionGroup
+        transitionName="worksTransition"
+        transitionAppear={true}
+        transitionAppearTimeout={500}
+        transitionEnter={false}
+        transitionLeave={false}>
+      <div className="page">
+        <Link to="/"><li>tillbaka</li></Link>
+        <h1>Eventpage</h1>
+        <p>Hello FVÄLDMVCMSM a eventpage!</p>
+       </div>
+       </CSSTransitionGroup>
+     )
+   }
+ }
 
-// const EventPage = AnimatedWrapper(EventPageComponent);
 export default EventPage;

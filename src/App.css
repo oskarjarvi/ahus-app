@@ -3,6 +3,7 @@ html,body{
   margin: 0;
   height: 100%;
   width: 100%;
+  background-color: #f9f9f9;
 }
 .App {
   text-align: center;
@@ -10,9 +11,21 @@ html,body{
   align-items: center;
   flex-direction: column;
 }
+.App-header {
+  height: 257px;
+  width: 375px;
+}
+.rectangle {
+  height: 40px;
+  width: 343px;
+  margin-top: 16px;
+  border: 3px solid #FCEB4F;
+  background-color: #FFEB00;
+}
 .SidebarPosition{
   position: fixed;
   bottom: 81px;
+  top: 368px;
   left: 16px;
 }
 .page {

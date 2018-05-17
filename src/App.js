@@ -19,7 +19,9 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-
+        </header>
+        <div className="rectangle">
+        </div>
         <div class="SidebarPosition">
         <Sidebar>
         </Sidebar>
@@ -27,7 +29,7 @@ class App extends Component {
         </div>
 
 
-  </header>
+
         <Navbar />
       </div>
     );
