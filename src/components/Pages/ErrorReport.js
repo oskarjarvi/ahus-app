@@ -23,11 +23,21 @@ class ErrorReport extends Component {
 
   errorReport(e){
     e.preventDefault();
-    // base.database().ref('error-report').push(this.state.name, this.state.address, this.state.roomnumber, this.state.message, this.state.email, this.state.phone)
+    base.database().ref('error-report').push(
+          {
+            name: this.state.name,
+            address: this.state.address,
+            roomnumber: this.state.roomnumber,
+            message: this.state.message,
+            email: this.state.email,
+            phone: this.state.phone
+          }
+        );
   }
 
   handleChange(e){
-    this.setState({ [e.target.name]: e.target.value });
+    console.log(e.target.name);
+    this.setState({  [e.target.name]: e.target.value });
   }
     render() {
       return(
@@ -42,7 +52,7 @@ class ErrorReport extends Component {
         <form>
           <div>
             <label for="name">Namn*</label>
-            <input value={this.state.name} onChange={this.handleChange} type="text" placeholder="namn" name="namn" required />
+            <input value={this.state.name} onChange={this.handleChange} type="text" placeholder="namn" name="name" required />
           </div>
 
           <div>
@@ -57,7 +67,7 @@ class ErrorReport extends Component {
 
           <div>
             <label for="message">Beskrivning(max 3000 tecken)*</label>
-            <textarea value={this.state.message} onChange={this.handleChange}></textarea>
+            <textarea name="message" value={this.state.message} onChange={this.handleChange}></textarea>
           </div>
 
           <div>
