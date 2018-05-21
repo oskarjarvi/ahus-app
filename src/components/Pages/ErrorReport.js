@@ -18,7 +18,6 @@ class ErrorReport extends Component {
       email: '',
       phone: ''
     }
-
   }
 
   errorReport(e){
@@ -52,17 +51,17 @@ class ErrorReport extends Component {
         <form>
           <div>
             <label for="name">Namn*</label>
-            <input value={this.state.name} onChange={this.handleChange} type="text" placeholder="namn" name="name" required />
+            <input className ="name"value={this.state.name} onChange={this.handleChange} type="text" placeholder="namn" name="name" required />
           </div>
 
           <div>
             <label for="address">Adress*</label>
-            <input value={this.state.address} onChange={this.handleChange} type="text" placeholder="adress" name="address" required />
+            <input className ="adress"value={this.state.address} onChange={this.handleChange} type="text" placeholder="adress" name="address" required />
           </div>
 
           <div>
             <label for="roomnumber">Rum/rumsnr*</label>
-            <input value={this.state.roomnumber} onChange={this.handleChange} type="text" name="roomnumber" required />
+            <input className ="roomnumber"value={this.state.roomnumber} onChange={this.handleChange} type="text" name="roomnumber" required />
           </div>
 
           <div>
@@ -72,12 +71,12 @@ class ErrorReport extends Component {
 
           <div>
             <label for="email">Mail</label>
-            <input value={this.state.email} onChange={this.handleChange} type="text" name="email" required />
+            <input className ="email"value={this.state.email} onChange={this.handleChange} type="text" name="email" required />
           </div>
 
           <div>
             <label for="phone">Telefon</label>
-            <input value={this.state.phone} onChange={this.handleChange} type="text" name="phone" required />
+            <input className ="phone"value={this.state.phone} onChange={this.handleChange} type="text" name="phone" required />
           </div>
 
     <p>Eran information kommer endast användas i syfte för att åtgärda det
