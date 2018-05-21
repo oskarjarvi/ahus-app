@@ -37,6 +37,20 @@ html,body{
   border-radius: 3px;
   background-color: #0094BB;
 }
+<<<<<<< HEAD
 div {
   color: black!important;
+=======
+.page.error div{
+display:flex;
+align-items: flex-start;
+flex-direction: column;
+padding:10px;
+}
+.page.error .name, .email, .phone {
+  width:80%;
+}
+.page.error .adress {
+  width:70%;
+>>>>>>> 8f837e0df10411f9ac34bde7bcaa9e8494448a0c
 }

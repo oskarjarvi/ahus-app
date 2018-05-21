@@ -7,8 +7,8 @@ class StartPage extends Component {
   render() {
     return (
       <div>
-        <Main></Main>
-        <HamburgerNavigation></HamburgerNavigation>
+        <Main />
+        <HamburgerNavigation />
       </div>
     )
   }
