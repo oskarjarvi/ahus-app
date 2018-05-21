@@ -1,42 +1,35 @@
 import React, { Component } from 'react';
 import base from '../base';
+import MyFancyComponent from './Container';
 
 class UseMyLocation extends Component {
-  // constructor(props) {
-  //   super(props);
-  //   this.state = {
-  //     map: {
-  //       zoom: 14,
-  //       center:{lat:57.708870, lng:-11.974560}
-  //     }
-  //     latitude: null,
-  //     longitude: null
-  //   }
-  //
-  //
-  // }
-  // useMyLocation(e){
-  //   e.preventDefault();
-  //   base.database().ref('Campus').on('value',function(dataSnapshot) {
-  //     this.setState({
-  //       const campus = snapshot.child("Campus Haga och Linné").val();
-  //     })
-  // });
-    // );
-  //   this.setState({
-  //     markers: {
-  //       position: props.coords,
-  //       map:map
-  //     }
-  //   })
-  // }
+  constructor(props) {
+    super(props);
+    this.state = {
+      toggle: false
+    };
+    this.eventHandler = this.eventHandler.bind(this);
+  }
+  eventHandler(event) {
+    this.setState(prevState => ({
+      toggle: !prevState.toggle
+    }));
+  }
 
 
   render(){
     return(
+      <div>
 
 
-    )
+        {this.state.toggle ? (
+          <div>
+            <MyFancyComponent></MyFancyComponent>
+          </div>) : <div onClick={this.eventHandler}>Använd min position</div>}
+
+      </div>
+
+)
   }
 }
 

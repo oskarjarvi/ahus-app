@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.firstMenu a {
+  text-decoration: none;
+  list-style: none;
+  color: white;
+
+}
+
+.box {
+  background-color: #6EC81E;
+  height: 40px;
+  width: 344px;
+  border-radius: 3px;
+  margin: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login {
+  margin-top: 72px;
+}
+.firstPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.chooseCampus {
+  margin-top: 109px;
+  font-size: 24px;
+}
+.myCampus {
+  margin-top: 150px;
+  border-bottom: 4px solid green;
+  border-right: 4px solid green;
+	height: 35px;
+  width: 188px;
+  padding: 2%;
+  font-size: 27px;
+}
