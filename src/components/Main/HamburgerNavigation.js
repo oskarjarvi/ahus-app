@@ -4,6 +4,7 @@ import '../../App.css';
 const HamburgerNavigation = () => (
   <ul>
     <Link to="/Login"><li>Inlogg för arbetare</li></Link>
+    <Link to="/HomeForWorkers"><li>för arbetare</li></Link>
     <Link to="/"><li>Tillbaka</li></Link>
   </ul>
 )

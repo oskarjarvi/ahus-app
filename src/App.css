@@ -37,3 +37,6 @@ html,body{
   border-radius: 3px;
   background-color: #0094BB;
 }
+div {
+  color: black!important;
+}

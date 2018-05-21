@@ -6,7 +6,9 @@ import Information from "./NavbarContent/Information";
 import Houseguide from "./NavbarContent/Houseguide";
 import AboutUs from "./NavbarContent/AboutUs";
 
-import { Link } from "react-router-dom";
+import Main from '../Main/Main';
+import HamburgerNavigation from '../Main/HamburgerNavigation';
+
 
 import "./index.css";
 
@@ -34,7 +36,12 @@ class Navbar extends Component {
           <Parking />
           <Houseguide />
           <AboutUs />
+
+            <Main></Main>
+            <HamburgerNavigation></HamburgerNavigation>
         </ul> ) : ""}
+
+
 
         <button
           className={this.state.toggle ? "nav-toggle active" : "nav-toggle "}
