@@ -12,7 +12,6 @@
   grid-template-columns: repeat(3, 104px);
   grid-template-rows: repeat(2, 104px);
   grid-gap: 16px;
-
 }
 @media screen and (max-width: 350px) {
   .SidebarMeny {
@@ -28,22 +27,28 @@
   align-items: center;
   color: #ffff;
   background-color: #E9EFE9;
+  border-radius: 3px;
 }
 .HouseEvents{
+  background-color: #EE7F00;
 }
 .MyConnections{
+  background-color: #6EC81E;
 }
 .ErrorPage{
+  background-color: #0094BB;
 }
 
 .EventPage{
+  background-color: #EC008C;
 }
 .Map{
+  background-color: #59539B;
 }
 .Extra{
-  background-color: #FAFAFA;;
-  color: #E9EFE9;
-  box-shadow: inset 0px 0px 0px 3px #E9EFE9;
+  background-color: #FAFAFA;
+  color: #6EC81E;
+  box-shadow: inset 0px 0px 0px 3px #6EC81E;
 }
 
 .TopBar {

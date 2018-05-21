@@ -9,7 +9,7 @@ const Navigation = () => (
       <Link to="/ErrorReport"><li className="SidebarLink ErrorPage">Felanmälan</li></Link>
       <Link to="/EventPage"><li className="SidebarLink EventPage">Eventsida</li></Link>
       <Link to="/"><li className="SidebarLink Map">Karta</li></Link>
-      <Link to="/"><li className="SidebarLink Extra">+</li></Link>
+      <Link to="/"><li className="SidebarLink Extra">+ Lägg till ny genväg</li></Link>
     </ul>
   </div>
 )
