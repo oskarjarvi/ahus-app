@@ -21,3 +21,17 @@
 .loginLink {
   transition: 0.5s;
 }
+
+.loginForm {
+  color: white;
+  position: relative;
+  height: 61vh;
+}
+.loginButton {
+  height: 32px;
+  width: 80px;
+  border-radius: 3px;
+  background-color: #FFFFFF;
+  position: absolute;
+  bottom: 104px;
+}

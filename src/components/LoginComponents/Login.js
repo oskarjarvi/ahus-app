@@ -29,7 +29,8 @@ class Login extends Component {
   render() {
     return(
       <div>
-        <form>
+        <form className="loginForm">
+          <p>Logga in som anställd</p>
           <label htmlFor="InputEmail">Email address</label>
           <input value={this.state.email} onChange={this.handleChange} type="email" name="email"
           id="InputEmail" aria-describedby="emailHelp"
@@ -37,7 +38,7 @@ class Login extends Component {
           <label htmlFor="InputPassword">Password</label>
           <input value={this.state.password} onChange={this.handleChange} type="password" name="password"
           id="InputPassword" placeholder="Password"/>
-          <button type="submit" onClick={this.login}>Login</button>
+        <button className="loginButton" type="submit" onClick={this.login}>Login</button>
         </form>
       </div>
 

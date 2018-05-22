@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import Button from '../LoginComponents/Button';
 import LoginLink from '../LoginComponents/LoginLink';
 import './index.css';
 class HamburgerNavigation extends Component {
