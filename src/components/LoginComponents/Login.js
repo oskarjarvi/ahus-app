@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import base from './base';
+import base from '../base';
 
 class Login extends Component {
   constructor(props) {

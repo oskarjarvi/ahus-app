@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
-import base from './base';
+import base from '../base';
 import Login from './Login'
 import HomeForWorkers from './HomeForWorkers'
+
+
 class Button extends Component {
   constructor(props){
     super(props);
@@ -26,8 +28,8 @@ componentDidMount(){
 
   render(){
     return (
-      <div className="SignInButton">
-      {this.state.user ? (<HomeForWorkers />): (<Login />)}
+      <div className="signInButton">
+      {this.state.user ? (<HomeForWorkers /> ): (<Login />)}
       </div>
     )
   }

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Button from './Button';
-class Link extends Component {
+import './index.css';
+class LoginLink extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -16,12 +17,12 @@ class Link extends Component {
     }
   render(){
     return (
-      <div className="SignInButton">
-      {this.state.toggle ? <Button />: <p onClick={this.eventHandler}>Inlogg för användare</p>}
+      <div className={this.state.toggle ? "loginLink Active" : "loginLink "} onClick={this.eventHandler}>
+      {this.state.toggle ? <Button />:<p>LOGGA IN SOM ANSTÄLLD</p>}
 
       </div>
     )
   }
 }
 
-export default Link;
+export default LoginLink;
