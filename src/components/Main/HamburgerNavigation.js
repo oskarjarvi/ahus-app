@@ -7,10 +7,10 @@ const HamburgerNavigation = () => (
     <div className="myCampus"></div>
     <h2 className="chooseCampus">VÄLJ CAMPUS</h2>
     <ul className="firstMenu">
-      <Link to="/"><li className="box">Sök</li></Link>
-      <Link to="/"><li className="box">Senast valda plats</li></Link>
-      <Link to="/UseMyLocation"><li className="box">Använd min position</li></Link>
-      <Link to="/Login"><li className="box login">Inlogg för arbetare</li></Link>
+      <Link to="/"><li className="box">SÖK</li></Link>
+      <Link to="/UseMyLocation"><li className="box">ANVÄND MIN POSITION</li></Link>
+      <Link to="/"><li className="box">SENAST VALDA</li></Link>
+      <Link to="/Login"><li className="box login">LOGGA IN SOM ANSTÄLLD</li></Link>
       <Link to="/"><li>Tillbaka</li></Link>
     </ul>
   </div>

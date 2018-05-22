@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import Sidebar from './components/Sidebar/Sidebar';
 import StartPage from './StartPage';
 import Navigation from './components/Sidebar/Navigation';
-
+import HeaderHomePage from './components/Header';
+import School from './components/School';
 import Navbar from './components/Navbar';
 import './App.css';
 
@@ -10,7 +11,7 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      toggle: false
+      toggle: true
     };
     this.eventHandler = this.eventHandler.bind(this);
   }
@@ -30,15 +31,19 @@ class App extends Component {
 
         </header>
           {this.state.toggle ?
-            ( <div className="SidebarPosition">
-            <Sidebar>
-            </Sidebar>
-            <Navigation></Navigation>
+            ( <div>
+              <HeaderHomePage></HeaderHomePage>
+              <School></School>
+              <div className="SidebarPosition">
+                <Sidebar>
+                </Sidebar>
+                <Navigation></Navigation>
                 <Navbar />
-              </div>) :
+              </div>
+            </div>) :
           ( <div>
-            <StartPage></StartPage>
-          </div> ) }
+              <StartPage></StartPage>
+            </div> ) }
 
           <button onClick={this.eventHandler}>testetet</button>
 
