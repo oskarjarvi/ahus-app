@@ -2,10 +2,10 @@
     margin: 0;
     padding: 0;
 }
-.test a {
+.sidebar a {
   text-decoration: none;
 }
-.SidebarMeny {
+.sidebarMenu {
   list-style-type: none;
   padding-left: 0;
   display: grid;
@@ -14,13 +14,13 @@
   grid-gap: 16px;
 }
 @media screen and (max-width: 350px) {
-  .SidebarMeny {
+  .sidebarMenu {
     grid-template-columns: repeat(2, 104px);
     grid-template-rows: repeat(3, 104px);
   }
 }
 
-.SidebarLink {
+.sidebarLink {
   height: 100%;
   display: flex;
   justify-content: center;
@@ -29,29 +29,29 @@
   background-color: #E9EFE9;
   border-radius: 3px;
 }
-.HouseEvents{
+.houseEvents {
   background-color: #EE7F00;
 }
-.MyConnections{
+.myConnections {
   background-color: #6EC81E;
 }
-.ErrorPage{
+.errorPage {
   background-color: #0094BB;
 }
 
-.EventPage{
+.eventPage {
   background-color: #EC008C;
 }
-.Map{
+.mapPage {
   background-color: #59539B;
 }
-.Extra{
+.extraPage {
   background-color: #FAFAFA;
   color: #6EC81E;
   box-shadow: inset 0px 0px 0px 3px #6EC81E;
 }
 
-.TopBar {
+.topBar {
     position: fixed;
     bottom: 0;
     left: 0;

@@ -6,7 +6,7 @@ class HeaderHomePage extends Component {
     return (
   <div className="headerHome">
     <div className="notificationIcon">
-      <div className="ErIcon"></div>
+      <div className="errIcon"></div>
     </div>
       <div className="notification">
         <p className="messageBold">Oberoende busstider och försenade tåg</p>

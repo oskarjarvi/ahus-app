@@ -23,7 +23,7 @@ html,body{
   border: 3px solid #FCEB4F;
   background-color: #FFEB00;
 }
-.SidebarPosition{
+.sidebarPosition{
   position: fixed;
   bottom: 81px;
   top: 368px;

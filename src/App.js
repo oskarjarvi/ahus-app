@@ -34,7 +34,7 @@ class App extends Component {
             ( <div>
               <HeaderHomePage></HeaderHomePage>
               <School></School>
-              <div className="SidebarPosition">
+              <div className="sidebarPosition">
                 <Sidebar>
                 </Sidebar>
                 <Navigation></Navigation>

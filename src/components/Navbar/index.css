@@ -1,4 +1,4 @@
-.Navbar {
+.navbar {
   height: 43px;
   background-color: #6EC81E;
   width: 92%;
@@ -7,15 +7,16 @@
   margin-top: 16px;
   border-radius: 3px;
 }
-.Navbar.closed{
+.navbar.Closed{
   transition: 2s;
 }
-.Navbar.open {
+.navbar.Open {
   height: 379px;
   transition: 2s;
+  z-index: 100;
 }
 
-.StaticMenu {
+.staticMenu {
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -32,7 +33,7 @@
 span {
   top: 10px;
 }
-.nav-toggle {
+.navToggle {
   position: absolute;
   left: 46%;
   bottom: 8px;
@@ -41,7 +42,7 @@ span {
   border: none;
   background-color: transparent;
 }
-.nav-toggle span, .nav-toggle span:before, .nav-toggle span:after {
+.navToggle span, .navToggle span:before, .navToggle span:after {
   cursor: pointer;
   border-radius: 1px;
   height: 5.71px;
@@ -51,25 +52,25 @@ span {
   display: block;
   content: '';
 }
-.nav-toggle span:before {
+.navToggle span:before {
   top: -10px;
 }
-.nav-toggle span:after {
+.navToggle span:after {
   bottom: -10px;
 }
 
-.nav-toggle span, .nav-toggle span:before, .nav-toggle span:after {
+.navToggle span, .navToggle span:before, .navToggle span:after {
   transition: all 0.5s ease-in-out;
 }
-.nav-toggle.active span {
+.navToggle.Active span {
   background-color: #6EC81E;
 }
-.nav-toggle.active span:before, .nav-toggle.active span:after {
+.navToggle.Active span:before, .navToggle.Active span:after {
   top: 0;
 }
-.nav-toggle.active span:before {
+.navToggle.Active span:before {
   transform: rotate(45deg);
 }
-.nav-toggle.active span:after {
+.navToggle.Active span:after {
   transform: rotate(-45deg);
 }

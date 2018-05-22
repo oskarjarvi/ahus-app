@@ -27,9 +27,9 @@ class Navbar extends Component {
   }
   render() {
     return (
-      <div className={this.state.toggle ? "Navbar open" : "Navbar closed"}>
+      <div className={this.state.toggle ? "navbar Open" : "navbar Closed"}>
         {this.state.toggle ? (
-        <ul className="StaticMenu">
+        <ul className="staticMenu">
           <Search />
           <YourCampus />
           <Information />
@@ -44,7 +44,7 @@ class Navbar extends Component {
 
 
         <button
-          className={this.state.toggle ? "nav-toggle active" : "nav-toggle "}
+          className={this.state.toggle ? "navToggle Active" : "navToggle "}
           onClick={this.eventHandler}
         >
           <span />

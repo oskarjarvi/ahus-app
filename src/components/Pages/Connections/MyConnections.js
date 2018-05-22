@@ -12,7 +12,7 @@ class MyConnections extends Component {
         transitionAppearTimeout={500}
         transitionEnter={false}
         transitionLeave={false}>
-      <div className="page">
+      <div className="page Connections">
         <Link to="/"><li>tillbaka</li></Link>
         <h1>Mina kontakter</h1>
         <ul>
