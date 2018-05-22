@@ -50,32 +50,32 @@ class ErrorReport extends Component {
       <h1>Felanmälan</h1>
         <form>
           <div>
-            <label for="name">Namn*</label>
+            <label htmlFor="name">Namn*</label>
             <input className ="name"value={this.state.name} onChange={this.handleChange} type="text" placeholder="namn" name="name" required />
           </div>
 
           <div>
-            <label for="address">Adress*</label>
+            <label htmlFor="address">Adress*</label>
             <input className ="adress"value={this.state.address} onChange={this.handleChange} type="text" placeholder="adress" name="address" required />
           </div>
 
           <div>
-            <label for="roomnumber">Rum/rumsnr*</label>
+            <label htmlFor="roomnumber">Rum/rumsnr*</label>
             <input className ="roomnumber"value={this.state.roomnumber} onChange={this.handleChange} type="text" name="roomnumber" required />
           </div>
 
           <div>
-            <label for="message">Beskrivning(max 3000 tecken)*</label>
+            <label htmlFor="message">Beskrivning(max 3000 tecken)*</label>
             <textarea name="message" value={this.state.message} onChange={this.handleChange}></textarea>
           </div>
 
           <div>
-            <label for="email">Mail</label>
+            <label htmlFor="email">Mail</label>
             <input className ="email"value={this.state.email} onChange={this.handleChange} type="text" name="email" required />
           </div>
 
           <div>
-            <label for="phone">Telefon</label>
+            <label htmlFor="phone">Telefon</label>
             <input className ="phone"value={this.state.phone} onChange={this.handleChange} type="text" name="phone" required />
           </div>
 

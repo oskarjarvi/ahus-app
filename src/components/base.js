@@ -11,16 +11,4 @@ const config = {
 
 const base = firebase.initializeApp(config);
 
-const messaging = firebase.messaging();
-messaging.requestPermission()
-.then(function() {
-  console.log('permisson');
-  return messaging.getToken();
-})
-.then(function(token){
-  console.log(token);
-})
-.catch(function(error) {
-  console.log('you did not gave permisson');
-})
 export default base;

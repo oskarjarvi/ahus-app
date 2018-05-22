@@ -5,6 +5,7 @@
   position: fixed;
   bottom: 16px;
   margin-top: 16px;
+  border-radius: 3px;
 }
 .Navbar.closed{
   transition: 2s;

@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import base from '../base';
 import MyFancyComponent from './Container';
 
 class UseMyLocation extends Component {
