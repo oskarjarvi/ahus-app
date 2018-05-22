@@ -26,6 +26,7 @@
   color: white;
   position: relative;
   height: 61vh;
+  width: 100%;
 }
 .loginButton {
   height: 32px;
@@ -34,4 +35,23 @@
   background-color: #FFFFFF;
   position: absolute;
   bottom: 104px;
+}
+.loginHeader {
+  font-family: "Chronicle Deck Cond";
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29px;
+}
+
+.loginLabel {
+  color: white;
+  height: 22px;
+  width: 70px;
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 22px;
+}
+.loginInput {
+  margin-top: 23px;
 }

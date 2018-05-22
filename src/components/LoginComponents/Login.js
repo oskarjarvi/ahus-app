@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import base from '../base';
-
+import './index.css';
 class Login extends Component {
   constructor(props) {
     super(props);
@@ -30,14 +30,17 @@ class Login extends Component {
     return(
       <div>
         <form className="loginForm">
-          <p>Logga in som anställd</p>
-          <label htmlFor="InputEmail">Email address</label>
-          <input value={this.state.email} onChange={this.handleChange} type="email" name="email"
-          id="InputEmail" aria-describedby="emailHelp"
-          placeholder="Enter email"/>
-          <label htmlFor="InputPassword">Password</label>
-          <input value={this.state.password} onChange={this.handleChange} type="password" name="password"
-          id="InputPassword" placeholder="Password"/>
+          <p className="loginHeader">Logga in som anställd</p>
+          <div className="loginInput">
+            <label className="loginLabel" htmlFor="InputEmail">Mail</label>
+            <input value={this.state.email} onChange={this.handleChange} type="email" name="email"
+              id="InputEmail" aria-describedby="emailHelp"/>
+          </div>
+          <div className="loginInput">
+            <label className="loginLabel" htmlFor="InputPassword">Password</label>
+            <input value={this.state.password} onChange={this.handleChange} type="password" name="password"
+              id="InputPassword"/>
+          </div>
         <button className="loginButton" type="submit" onClick={this.login}>Login</button>
         </form>
       </div>
