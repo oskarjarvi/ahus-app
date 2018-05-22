@@ -6,7 +6,7 @@
   text-decoration: none;
   list-style: none;
   color: white;
-
+  font-family: "Open Sans";
 }
 
 .box {
@@ -33,10 +33,20 @@
   margin-top: 109px;
   font-size: 24px;
 }
+.ahusLogo {
+  background-image: url('../icons/AH_srgb.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+	height: 32px;
+  width: 49.14px;
+  align-self: flex-start;
+  margin-top: 16px;
+  margin-left: 16px;
+}
 .myCampus {
+  background-image: url('../icons/mittcampus_logga.svg');
+  background-repeat: no-repeat;
   margin-top: 150px;
-  border-bottom: 4px solid green;
-  border-right: 4px solid green;
 	height: 35px;
   width: 188px;
   padding: 2%;

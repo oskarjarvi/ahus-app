@@ -3,7 +3,8 @@ import { Link } from 'react-router-dom';
 import './index.css';
 const HamburgerNavigation = () => (
   <div className="firstPage">
-    <h1 className="myCampus">MITT CAMPUS</h1>
+    <div className="ahusLogo"></div>
+    <div className="myCampus"></div>
     <h2 className="chooseCampus">VÄLJ CAMPUS</h2>
     <ul className="firstMenu">
       <Link to="/"><li className="box">Sök</li></Link>

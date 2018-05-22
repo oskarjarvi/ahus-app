@@ -42,11 +42,6 @@ class App extends Component {
 
           <button onClick={this.eventHandler}>testetet</button>
 
-
-
-
-
-
       </div>
     );
   }
