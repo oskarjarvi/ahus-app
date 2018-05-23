@@ -12,15 +12,7 @@ li {
   width: 24px;
 }
 
-.page.Event {
-  left: 0;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.page.Connections {
+.page {
   left: 0;
   margin: 0;
   padding: 0;
@@ -42,6 +34,11 @@ li {
   margin:10px;
   width:55px;
   background-image: url('./../icons/contacts.svg');
+}
+.driftIcon{
+  margin:10px;
+  width:55px;
+  background-image: url('./../icons/driftstorning.svg');
 }
 .Box {
   height: 104px;
@@ -70,6 +67,18 @@ li {
 .contactThree
 {
   background-image: url('./../images/roy.png');
+}
+.driftOne
+{
+background-image: url('./../icons/hjalm.svg');
+}
+.driftTwo
+{
+background-image: url('./../icons/mala.svg');
+}
+.driftThree
+{
+background-image: url('./../icons/vatten_stopp.svg');
 }
 
 .newsImage {
