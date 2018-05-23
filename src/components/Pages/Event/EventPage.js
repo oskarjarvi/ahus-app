@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import {CSSTransitionGroup} from "react-transition-group";
 import { Link } from 'react-router-dom';
 import '../../../App.css';
-import './index.css'
+import '../index.css';
 
 class EventPage extends Component {
   render() {
@@ -14,6 +14,7 @@ class EventPage extends Component {
         transitionEnter={false}
         transitionLeave={false}>
         <div className="page Event">
+<<<<<<< Updated upstream
           <Link to="/"><li className="backToMainPage"></li></Link>
             <div className="newsIcon"></div>
             <h1 className="newsHeader">Event</h1>
@@ -21,22 +22,31 @@ class EventPage extends Component {
             <div className="newsBox">
               <div className="newsImage"></div>
                 <div className="newsContent">
+=======
+          <Link to="/"><li>tillbaka</li></Link>
+            <div className="icon newsIcon"></div>
+            <h1 className="Header">Event</h1>
+            <p className="School">Kungliga Tekniska högskolan</p>
+            <div className="Box">
+              <div className="images newsImage"></div>
+                <div className="Content">
+>>>>>>> Stashed changes
                   <p className="contentBold">Cykelvecka</p>
                   <p className="contentLight">Vecka 20</p>
                 </div>
                 <div className="newsArrow"></div>
             </div>
-            <div className="newsBox">
-              <div className="newsImage Two"></div>
-              <div className="newsContent">
+            <div className="Box">
+              <div className="images Two"></div>
+              <div className="Content">
                 <p className="contentBold">Examensvecka</p>
                 <p className="contentLight">Vecka 23</p>
               </div>
               <div className="newsArrow"></div>
             </div>
-            <div className="newsBox">
-              <div className="newsImage Three"></div>
-                <div className="newsContent">
+            <div className="Box">
+              <div className="images Three"></div>
+                <div className="Content">
                   <p className="contentBold">Mjölkens dag</p>
                   <p className="contentLight">1 juni</p>
                 </div>
