@@ -3,8 +3,7 @@ import {CSSTransitionGroup} from "react-transition-group";
 import { Link } from 'react-router-dom';
 import '../../../App.css';
 import '../index.css';
-
-class EventPage extends Component {
+class Disturbances extends Component {
   render() {
     return (
       <CSSTransitionGroup
@@ -14,43 +13,41 @@ class EventPage extends Component {
         transitionEnter={false}
         transitionLeave={false}>
 
-        <div className="page Event">
-
-        
-
-            <Link to="/"><li className="backToMainPage"></li></Link>
-            <div className="icon newsIcon"></div>
-            <h1 className="Header">Event</h1>
+        <div className="page Disturbances">
+          <Link to="/"><li className="backToMainPage"></li></Link>
+            <div className="icon driftIcon"></div>
+            <h1 className="Header">Driftstörningar</h1>
             <p className="School">Kungliga Tekniska högskolan</p>
             <div className="Box">
-              <div className="images newsImage"></div>
+              <div className="images driftOne"></div>
                 <div className="Content">
-                  <p className="contentBold">Cykelvecka</p>
-                  <p className="contentLight">Vecka 20</p>
+                  <p className="contentBold">Stig Järnberg</p>
+                  <p className="contentLight">Fastighetschef</p>
                 </div>
                 <div className="newsArrow"></div>
             </div>
             <div className="Box">
-              <div className="images Two"></div>
+              <div className="images driftTwo"></div>
               <div className="Content">
-                <p className="contentBold">Examensvecka</p>
-                <p className="contentLight">Vecka 23</p>
+                <p className="contentBold">Jeanette Gustavsson</p>
+                <p className="contentLight">Förvaltare</p>
               </div>
               <div className="newsArrow"></div>
+
             </div>
             <div className="Box">
-              <div className="images Three"></div>
+              <div className="images driftThree"></div>
                 <div className="Content">
-                  <p className="contentBold">Mjölkens dag</p>
-                  <p className="contentLight">1 juni</p>
+                  <p className="contentBold">Roy Sjöström</p>
+                  <p className="contentLight">It-service</p>
                 </div>
                 <div className="newsArrow"></div>
-            </div>
 
+            </div>
          </div>
        </CSSTransitionGroup>
      )
-   }
- }
+  }
+}
 
-export default EventPage;
+export default Disturbances;

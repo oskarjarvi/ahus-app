@@ -2,7 +2,7 @@ li {
   list-style: none;
 }
 .backToMainPage {
-  background-image: url('../../icons/bakot_pil.svg');
+  background-image: url('./../icons/bakot_pil.svg');
   background-repeat: no-repeat;
   background-size: contain;
   position: absolute;
@@ -12,7 +12,7 @@ li {
   width: 24px;
 }
 
-.page.Event {
+.page {
   left: 0;
   margin: 0;
   padding: 0;
@@ -20,40 +20,80 @@ li {
   flex-direction: column;
   align-items: center;
 }
-
-.newsIcon {
-  background-image: url('../../icons/ballongPink.svg');
+.icon {
   background-repeat: no-repeat;
   background-size: cover;
   height: 55.81px;
   width: 42.38px;
 }
-.newsBox {
+.newsIcon {
+  background-image: url('./../icons/ballongPink.svg');
+}
+.contactIcon
+{
+  margin:10px;
+  width:55px;
+  background-image: url('./../icons/contacts.svg');
+}
+.driftIcon{
+  margin:10px;
+  width:55px;
+  background-image: url('./../icons/driftstorning.svg');
+}
+.Box {
   height: 104px;
   width: 343px;
   background-color: #FFFFFF;
   margin: 16px;
   position: relative;
 }
-.newsImage {
+.images {
   float: left;
-  background-image: url('../../images/cykel.png');
   background-repeat: no-repeat;
 	height: 104px;
   width: 104px;
   border-radius: 3px;
   background-size: cover;
+
+}
+.contactOne
+{
+  background-image: url('./../images/stig.png');
+}
+.contactTwo
+{
+  background-image: url('./../images/jeanette.png');
+}
+.contactThree
+{
+  background-image: url('./../images/roy.png');
+}
+.driftOne
+{
+background-image: url('./../icons/hjalm.svg');
+}
+.driftTwo
+{
+background-image: url('./../icons/mala.svg');
+}
+.driftThree
+{
+background-image: url('./../icons/vatten_stopp.svg');
+}
+
+.newsImage {
+  background-image: url('./../images/cykel.png');
 }
 
 .Two {
-  background-image: url('../../images/graduation.png');
+  background-image: url('./../images/graduation.png');
 }
 
 .Three {
-  background-image: url('../../images/milkensdag.png');
+  background-image: url('./../images/milkensdag.png');
 }
 
-.newsContent {
+.Content {
   display: flex;
   flex-direction: column;
   position: absolute;
@@ -86,7 +126,7 @@ li {
   line-height: 19px;
 }
 
-.newsHeader {
+.Header {
 	height: 24px;
   color: #000000;
   font-family: "Chronicle Deck Cond";
@@ -97,7 +137,7 @@ li {
   text-align: center;
   margin-top:
 }
-.newsSchool {
+.School {
   height: 27px;
   width: 197px;
   color: #000000;
@@ -110,7 +150,7 @@ li {
   margin-top: 18px;
 }
 .newsArrow {
-  background-image: url('../../icons/framot_pil.svg');
+  background-image: url('./../icons/framot_pil.svg');
   background-repeat: no-repeat;
   background-size: contain;
   position: absolute;
@@ -120,4 +160,52 @@ li {
   width: 20px;
   margin: 0;
   padding: 0;
+}
+.callIcon
+{
+  background-image: url('./../icons/ring.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+
+  right: 45.82px;
+  bottom: 10px;
+  height: 30px;
+  width: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.mailIcon
+{
+  background-image: url('./../icons/meddelande.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  right: 85.82px;
+
+  bottom: 10px;
+  height: 30px;
+  width: 30px;
+  margin: 0;
+  padding: 0;
+}
+/*error handling*/
+.page.error div{
+display:flex;
+align-items: flex-start;
+flex-direction: column;
+padding:10px;
+}
+.page.error .name, .email, .phone {
+  width:80%;
+}
+.page.error .adress {
+  width:70%;
+}
+.page.error {
+  left: 15px;
+  width: 92%;
+  border-radius: 3px;
+  background-color: #0094BB;
 }

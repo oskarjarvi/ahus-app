@@ -6,6 +6,7 @@ import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 import Push from 'push.js';
 
+
 Push.create("Hello!", {
     body: "There´s a new event'!",
     icon: './icon.png',
@@ -17,9 +18,9 @@ Push.create("Hello!", {
 });
 
 ReactDOM.render(
- <BrowserRouter>
-   <App />
- </BrowserRouter>,
- document.getElementById("root")
+  <BrowserRouter>
+  <App />
+  </BrowserRouter>,
+  document.getElementById("root")
 );
 registerServiceWorker();
