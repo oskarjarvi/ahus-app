@@ -1,3 +1,17 @@
+li {
+  list-style: none;
+}
+.backToMainPage {
+  background-image: url('../../icons/bakot_pil.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  height: 20px;
+  width: 24px;
+}
+
 .page.Event {
   left: 0;
   margin: 0;
@@ -23,7 +37,7 @@
 }
 .newsImage {
   float: left;
-  background-image: url('../../icons/cykel.png');
+  background-image: url('../../images/cykel.png');
   background-repeat: no-repeat;
 	height: 104px;
   width: 104px;
@@ -32,11 +46,11 @@
 }
 
 .Two {
-  background-image: url('../../icons/graduation.png');
+  background-image: url('../../images/graduation.png');
 }
 
 .Three {
-  background-image: url('../../icons/milkensdag.png');
+  background-image: url('../../images/milkensdag.png');
 }
 
 .newsContent {
@@ -46,10 +60,11 @@
   left: 46px;
 }
 .contentBold {
-  margin-left: 16px;
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 66px;
   margin-top: 23px;
 	height: 21px;
-  width: 221px;
   color: #000000;
   font-family: "Open Sans";
   font-size: 16px;
@@ -59,9 +74,10 @@
 }
 
 .contentLight {
-  margin-left: 16px;
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 67px;
   height: 21px;
-  width: 221px;
   color: #000000;
   font-family: "Open Sans";
   font-size: 14px;
@@ -72,7 +88,6 @@
 
 .newsHeader {
 	height: 24px;
-  width: 76px;
   color: #000000;
   font-family: "Chronicle Deck Cond";
   font-size: 24px;
@@ -101,7 +116,7 @@
   position: absolute;
   right: 11.82px;
   bottom: 42.82px;
-  height: 12.36px;
+  height: 17.36px;
   width: 20px;
   margin: 0;
   padding: 0;

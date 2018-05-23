@@ -14,7 +14,7 @@ class EventPage extends Component {
         transitionEnter={false}
         transitionLeave={false}>
         <div className="page Event">
-          <Link to="/"><li>tillbaka</li></Link>
+          <Link to="/"><li className="backToMainPage"></li></Link>
             <div className="newsIcon"></div>
             <h1 className="newsHeader">Event</h1>
             <p className="newsSchool">Kungliga Tekniska högskolan</p>

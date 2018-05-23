@@ -48,6 +48,7 @@ class ErrorReport extends Component {
     transitionEnter={false}
     transitionLeave={false}>
     <div className="page error">
+      <Link to="/"><li className="backToMainPage"></li></Link>
       <h1>Felanmälan</h1>
         <form>
           <div>
@@ -85,7 +86,6 @@ class ErrorReport extends Component {
      från våran databas.</p>
    <button type="submit" onClick={this.errorReport}>Skicka in</button>
     </form>
-<Link to="/"><li>tillbaka</li></Link>
      </div>
   </CSSTransitionGroup>
     )

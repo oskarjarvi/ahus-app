@@ -11,7 +11,7 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      toggle: false
+      toggle: true
     };
     this.eventHandler = this.eventHandler.bind(this);
   }
