@@ -22,7 +22,7 @@ class NewPage extends Component {
               </div>
             </div>
             <div className="extraPlus">
-              <div class="plus"></div>
+              <div className="plus"></div>
             </div>
           </div>
 
@@ -33,7 +33,7 @@ class NewPage extends Component {
                 </div>
               </div>
               <div className="extraPlus">
-                <div class="plus"></div>
+                <div className="plus"></div>
               </div>
             </div>
 
@@ -45,7 +45,7 @@ class NewPage extends Component {
               </div>
             </div>
             <div className="extraPlus">
-              <div class="plus"></div>
+              <div className="plus"></div>
             </div>
           </div>
 
