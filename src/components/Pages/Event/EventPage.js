@@ -13,24 +13,18 @@ class EventPage extends Component {
         transitionAppearTimeout={500}
         transitionEnter={false}
         transitionLeave={false}>
+
         <div className="page Event">
-<<<<<<< Updated upstream
-          <Link to="/"><li className="backToMainPage"></li></Link>
-            <div className="newsIcon"></div>
-            <h1 className="newsHeader">Event</h1>
-            <p className="newsSchool">Kungliga Tekniska högskolan</p>
-            <div className="newsBox">
-              <div className="newsImage"></div>
-                <div className="newsContent">
-=======
-          <Link to="/"><li>tillbaka</li></Link>
+
+        
+
+            <Link to="/"><li className="backToMainPage"></li></Link>
             <div className="icon newsIcon"></div>
             <h1 className="Header">Event</h1>
             <p className="School">Kungliga Tekniska högskolan</p>
             <div className="Box">
               <div className="images newsImage"></div>
                 <div className="Content">
->>>>>>> Stashed changes
                   <p className="contentBold">Cykelvecka</p>
                   <p className="contentLight">Vecka 20</p>
                 </div>
@@ -52,6 +46,7 @@ class EventPage extends Component {
                 </div>
                 <div className="newsArrow"></div>
             </div>
+
          </div>
        </CSSTransitionGroup>
      )

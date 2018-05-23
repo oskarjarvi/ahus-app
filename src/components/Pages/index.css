@@ -2,7 +2,7 @@ li {
   list-style: none;
 }
 .backToMainPage {
-  background-image: url('../../icons/bakot_pil.svg');
+  background-image: url('./../icons/bakot_pil.svg');
   background-repeat: no-repeat;
   background-size: contain;
   position: absolute;
@@ -52,7 +52,6 @@ li {
 }
 .images {
   float: left;
-  background-image: url('../../images/cykel.png');
   background-repeat: no-repeat;
 	height: 104px;
   width: 104px;
@@ -62,27 +61,27 @@ li {
 }
 .contactOne
 {
-  background-image: url('./../icons/stig.png');
+  background-image: url('./../images/stig.png');
 }
 .contactTwo
 {
-  background-image: url('./../icons/jeanette.png');
+  background-image: url('./../images/jeanette.png');
 }
 .contactThree
 {
-  background-image: url('./../icons/roy.png');
+  background-image: url('./../images/roy.png');
 }
 
 .newsImage {
-  background-image: url('./../icons/cykel.png');
+  background-image: url('./../images/cykel.png');
 }
 
 .Two {
-  background-image: url('../../images/graduation.png');
+  background-image: url('./../images/graduation.png');
 }
 
 .Three {
-  background-image: url('../../images/milkensdag.png');
+  background-image: url('./../images/milkensdag.png');
 }
 
 .Content {
