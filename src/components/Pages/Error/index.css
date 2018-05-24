@@ -86,6 +86,11 @@
   line-height: 17px;
   margin: 17px 16px 72px 247px;
   cursor: pointer;
+  transform: 2s;
+}
+.buttonForForm.Active {
+  transform: 2s;
+  background-color: green;
 }
 .formWrapper {
   display: flex;

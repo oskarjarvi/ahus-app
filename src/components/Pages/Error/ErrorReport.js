@@ -37,7 +37,6 @@ class ErrorReport extends Component {
   }
 
   handleChange(e){
-    console.log(e.target.name);
     this.setState({  [e.target.name]: e.target.value });
   }
 
@@ -108,7 +107,7 @@ class ErrorReport extends Component {
     <p className="gdprInfo">Eran information kommer endast användas i syfte för att åtgärda det
      problem som anmälts. Efter genomfört arbete raderas er information
      från våran databas.</p>
-   <button className ="buttonForForm" type="submit" onClick={this.errorReport}>Skicka in</button>
+   <button className={this.state.name='' ? "buttonForForm Active" : "buttonForForm "} type="submit" onClick={this.errorReport}>Skicka in</button>
     <div className="cross"></div>
     </form>
      </div>
