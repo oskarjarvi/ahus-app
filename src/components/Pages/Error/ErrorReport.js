@@ -55,14 +55,14 @@ class ErrorReport extends Component {
             <div>
               <label className ="labelForName" htmlFor="name">Namn*</label>
             </div>
-            <input className ="inputForName" value={this.state.name} onChange={this.handleChange} type="text" placeholder="För- och efternamn" name="name" required />
+            <input className ="inputForName" value={this.state.name} onChange={this.handleChange} type="text" placeholder=" För- och efternamn" name="name" required />
           </div>
 
           <div className="formWrapper">
             <div>
               <label className ="labelForName" htmlFor="building">Byggnad på campus*</label>
             </div>
-            <input className ="inputForName" value={this.state.address} onChange={this.handleChange} type="text" placeholder="t.ex. KTH Hallen" name="building" required />
+            <input className ="inputForName" value={this.state.address} onChange={this.handleChange} type="text" placeholder=" t.ex. KTH Hallen" name="building" required />
           </div>
 
           <div className="formWrapper">
@@ -76,24 +76,24 @@ class ErrorReport extends Component {
             <div>
               <label className ="labelForName" htmlFor="message">Beskrivning(max 3000 tecken)*</label>
             </div>
-            <textarea className ="labelForMessage" name="message" placeholder="Beskriv problemet och mer detaljerad position." value={this.state.message} onChange={this.handleChange}></textarea>
+            <textarea className ="labelForMessage" name="message" placeholder=" Beskriv problemet och mer detaljerad position." value={this.state.message} onChange={this.handleChange}></textarea>
           </div>
 
           <div className="formWrapper">
             <div>
               <label className ="labelForName" htmlFor="email">Mail</label>
             </div>
-            <input className ="inputForName" value={this.state.email} onChange={this.handleChange} type="text" placeholder="För att kunna återkoppla" name="email" required />
+            <input className ="inputForName" value={this.state.email} onChange={this.handleChange} type="text" placeholder=" För att kunna återkoppla" name="email" required />
           </div>
 
           <div className="formWrapper">
             <div>
               <label className ="labelForName" htmlFor="phone">Telefon</label>
             </div>
-            <input className ="inputForName" value={this.state.phone} onChange={this.handleChange} type="text" placeholder="För att kunna återkoppla" name="phone" required />
+            <input className ="inputForName" value={this.state.phone} onChange={this.handleChange} type="text" placeholder=" För att kunna återkoppla" name="phone" required />
           </div>
 
-    <p>Eran information kommer endast användas i syfte för att åtgärda det
+    <p className="gdprInfo">Eran information kommer endast användas i syfte för att åtgärda det
      problem som anmälts. Efter genomfört arbete raderas er information
      från våran databas.</p>
    <button className ="buttonForForm" type="submit" onClick={this.errorReport}>Skicka in</button>

@@ -45,16 +45,14 @@
   outline: none;
   border: none;
 }
-
-.inputForName input[type=text] {
-  height: 22px;
-  width: 139px;
+.inputForName::placeholder {
   opacity: 0.25;
   color: #424242;
   font-family: "Open Sans";
   font-size: 16px;
   font-weight: 300;
   line-height: 22px;
+  padding-left: 16px;
 }
 
 .labelForMessage {
@@ -64,6 +62,16 @@
   background-color: #FFFFFF;
   border: none;
   resize: none;
+}
+.labelForMessage::placeholder {
+  height: 44px;
+  opacity: 0.25;
+  color: #424242;
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 22px;
+  padding-left: 16px;
 }
 .buttonForForm {
   height: 32px;
@@ -87,6 +95,17 @@
   margin-bottom: 23px;
   flex-direction: column;
 }
+.gdprInfo {
+  margin-left: 16px;
+	height: 96px;
+  width: 311px;
+  opacity: 0.75;
+  color: #FFFFFF;
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 21px;
+}
 .cross {
   height: 24px;
   width: 24px;
@@ -95,5 +114,5 @@
   background-size: 100% 100%;
   position: absolute;
   bottom: 16px;
-  left: 145px;
+  left: 160px;
 }
