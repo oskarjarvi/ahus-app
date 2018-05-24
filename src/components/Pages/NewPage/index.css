@@ -19,11 +19,9 @@
   letter-spacing: 0.3px;
   line-height: 17px;
 }
-
 .extraText {
   margin-left: 16px;
 }
-
 .extraPlus {
   height: 40px;
   width: 56px;
@@ -38,11 +36,13 @@
   flex-wrap: wrap;
   align-items: center;
 }
-
 .plus {
   background-image: url('../../icons/laggTill.svg');
   background-repeat: no-repeat;
   background-size: contain;
   height: 16px;
   width: 16px;
+}
+.extraPageWrapper {
+  margin-top: 104px;
 }

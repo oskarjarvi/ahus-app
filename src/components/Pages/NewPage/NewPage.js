@@ -15,6 +15,8 @@ class NewPage extends Component {
         transitionLeave={false}>
         <div className="page Event">
           <Link to="/"><li className="backToMainPage"></li></Link>
+
+        <div className="extraPageWrapper">
           <div className="extraWrapper">
             <div className="extraBox">
               <div className="extraContent">
@@ -47,6 +49,7 @@ class NewPage extends Component {
             <div className="extraPlus">
               <div className="plus"></div>
             </div>
+          </div>
           </div>
 
 
