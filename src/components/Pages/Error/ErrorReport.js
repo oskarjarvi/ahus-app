@@ -33,12 +33,24 @@ class ErrorReport extends Component {
             phone: this.state.phone
           }
         );
+        this.clearForm()
   }
 
   handleChange(e){
     console.log(e.target.name);
     this.setState({  [e.target.name]: e.target.value });
   }
+
+  clearForm = () => {
+    this.setState({
+      name: '',
+      building: '',
+      roomnumber: '',
+      message: '',
+      email: '',
+      phone: ''
+    })}
+
     render() {
       return(
   <CSSTransitionGroup
