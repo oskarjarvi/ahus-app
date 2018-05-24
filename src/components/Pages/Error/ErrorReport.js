@@ -13,7 +13,7 @@ class ErrorReport extends Component {
 
     this.state = {
       name: '',
-      address: '',
+      building: '',
       roomnumber: '',
       message: '',
       email: '',
@@ -26,7 +26,7 @@ class ErrorReport extends Component {
     base.database().ref('error-report').push(
           {
             name: this.state.name,
-            address: this.state.address,
+            building: this.state.building,
             roomnumber: this.state.roomnumber,
             message: this.state.message,
             email: this.state.email,
@@ -47,44 +47,57 @@ class ErrorReport extends Component {
     transitionAppearTimeout={500}
     transitionEnter={false}
     transitionLeave={false}>
-    <div className="page error">
+    <div className="page Error">
       <Link to="/"><li className="backToMainPage"></li></Link>
-      <h1>Felanmälan</h1>
-        <form>
-          <div>
-            <label htmlFor="name">Namn*</label>
-            <input className ="name"value={this.state.name} onChange={this.handleChange} type="text" placeholder="namn" name="name" required />
+        <form className="errorForm">
+          <h1 className="errorHeader">Felanmälan</h1>
+          <div className="formWrapper">
+            <div>
+              <label className ="labelForName" htmlFor="name">Namn*</label>
+            </div>
+            <input className ="inputForName" value={this.state.name} onChange={this.handleChange} type="text" placeholder="För- och efternamn" name="name" required />
           </div>
 
-          <div>
-            <label htmlFor="address">Adress*</label>
-            <input className ="adress"value={this.state.address} onChange={this.handleChange} type="text" placeholder="adress" name="address" required />
+          <div className="formWrapper">
+            <div>
+              <label className ="labelForName" htmlFor="building">Byggnad på campus*</label>
+            </div>
+            <input className ="inputForName" value={this.state.address} onChange={this.handleChange} type="text" placeholder="t.ex. KTH Hallen" name="building" required />
           </div>
 
-          <div>
-            <label htmlFor="roomnumber">Rum/rumsnr*</label>
-            <input className ="roomnumber"value={this.state.roomnumber} onChange={this.handleChange} type="text" name="roomnumber" required />
+          <div className="formWrapper">
+            <div>
+              <label className ="labelForName" htmlFor="roomnumber">Rum/rumsnr*</label>
+            </div>
+            <input className ="inputForName" value={this.state.roomnumber} onChange={this.handleChange} type="text" name="roomnumber" required />
           </div>
 
-          <div>
-            <label htmlFor="message">Beskrivning(max 3000 tecken)*</label>
-            <textarea name="message" value={this.state.message} onChange={this.handleChange}></textarea>
+          <div className="formWrapper">
+            <div>
+              <label className ="labelForName" htmlFor="message">Beskrivning(max 3000 tecken)*</label>
+            </div>
+            <textarea className ="labelForMessage" name="message" placeholder="Beskriv problemet och mer detaljerad position." value={this.state.message} onChange={this.handleChange}></textarea>
           </div>
 
-          <div>
-            <label htmlFor="email">Mail</label>
-            <input className ="email"value={this.state.email} onChange={this.handleChange} type="text" name="email" required />
+          <div className="formWrapper">
+            <div>
+              <label className ="labelForName" htmlFor="email">Mail</label>
+            </div>
+            <input className ="inputForName" value={this.state.email} onChange={this.handleChange} type="text" placeholder="För att kunna återkoppla" name="email" required />
           </div>
 
-          <div>
-            <label htmlFor="phone">Telefon</label>
-            <input className ="phone"value={this.state.phone} onChange={this.handleChange} type="text" name="phone" required />
+          <div className="formWrapper">
+            <div>
+              <label className ="labelForName" htmlFor="phone">Telefon</label>
+            </div>
+            <input className ="inputForName" value={this.state.phone} onChange={this.handleChange} type="text" placeholder="För att kunna återkoppla" name="phone" required />
           </div>
 
     <p>Eran information kommer endast användas i syfte för att åtgärda det
      problem som anmälts. Efter genomfört arbete raderas er information
      från våran databas.</p>
-   <button type="submit" onClick={this.errorReport}>Skicka in</button>
+   <button className ="buttonForForm" type="submit" onClick={this.errorReport}>Skicka in</button>
+    <div className="cross"></div>
     </form>
      </div>
   </CSSTransitionGroup>
