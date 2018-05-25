@@ -23,15 +23,16 @@ class ErrorReport extends Component {
 
   errorReport(e){
     e.preventDefault();
+    this.setState (
     base.database().ref('error-report').push(
-          {
+       {
             name: this.state.name,
             building: this.state.building,
             roomnumber: this.state.roomnumber,
             message: this.state.message,
             email: this.state.email,
             phone: this.state.phone
-          }
+          })
         );
         this.clearForm()
   }
@@ -73,7 +74,7 @@ class ErrorReport extends Component {
             <div>
               <label className ="labelForName" htmlFor="building">Byggnad på campus*</label>
             </div>
-            <input className ="inputForName" value={this.state.address} onChange={this.handleChange} type="text" placeholder=" t.ex. KTH Hallen" name="building" required />
+            <input className ="inputForName" value={this.state.building} onChange={this.handleChange} type="text" placeholder=" t.ex. KTH Hallen" name="building" required />
           </div>
 
           <div className="formWrapper">
@@ -107,7 +108,7 @@ class ErrorReport extends Component {
     <p className="gdprInfo">Eran information kommer endast användas i syfte för att åtgärda det
      problem som anmälts. Efter genomfört arbete raderas er information
      från våran databas.</p>
-   <button className={this.state.name='' ? "buttonForForm Active" : "buttonForForm "} type="submit" onClick={this.errorReport}>Skicka in</button>
+   <button className={this.handleChange ? "buttonForForm" : "buttonForForm Active"} type="submit" onClick={this.errorReport}>Skicka in</button>
     <Link to="/"><div className="cross"></div></Link>
     </form>
      </div>
