@@ -13,7 +13,7 @@
   z-index: 10;
   position: relative;
   bottom: 105px;
-  background-color: #6EC81E;
+
   border-radius: 3px;
   transition: 0.5s;
 }
@@ -22,11 +22,26 @@
   transition: 0.5s;
 }
 
+/* .loginForm {
+  color: white;
+  border-radius: 3px;
+  position: relative;
+  bottom: 146px;
+  height: 50vh;
+  width: 51.6vh;
+  background-color: #6EC81E;
+} */
+
 .loginForm {
   color: white;
-  position: relative;
-  height: 61vh;
-  width: 100%;
+  border-radius: 3px;
+  position: absolute;
+  top: 206px;
+  left: 16px;
+  z-index: 1000;
+  height: 50vh;
+  width: 51.6vh;
+  background-color: #6EC81E;
 }
 .loginButton {
   height: 32px;

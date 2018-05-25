@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import base from '../base';
+import './index.css';
 class HomeForWorkers extends Component {
   constructor(props) {
     super(props);
@@ -12,7 +13,7 @@ logout(){
 
   render(){
     return(
-      <div>
+      <div className="loginForm">
       Du är inloggad
       <button onClick={this.logout}>Logout</button>
       </div>
