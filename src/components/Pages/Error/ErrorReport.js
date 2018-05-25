@@ -33,22 +33,22 @@ class ErrorReport extends Component {
             phone: this.state.phone
           }
         );
-        this.clearForm()
+        // this.clearForm()
   }
 
   handleChange(e){
     this.setState({  [e.target.name]: e.target.value });
   }
 
-  clearForm = () => {
-    this.setState({
-      name: '',
-      building: '',
-      roomnumber: '',
-      message: '',
-      email: '',
-      phone: ''
-    })}
+  // clearForm = () => {
+  //   this.setState({
+  //     name: '',
+  //     building: '',
+  //     roomnumber: '',
+  //     message: '',
+  //     email: '',
+  //     phone: ''
+  //   })}
 
     render() {
       return(
