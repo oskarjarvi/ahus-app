@@ -25,6 +25,7 @@
 .messageBold {
   height: 17px;
   width: 241px;
+  color: black;
   font-family: "Open Sans";
   font-size: 12px;
   font-weight: 600;
@@ -36,6 +37,7 @@
 }
 .messagelight {
   font-family: "Open Sans";
+  color: black;
   font-size: 10.4px;
   font-weight: 300;
   letter-spacing: 0.26px;

@@ -108,7 +108,7 @@ class ErrorReport extends Component {
      problem som anmälts. Efter genomfört arbete raderas er information
      från våran databas.</p>
    <button className={this.state.name='' ? "buttonForForm Active" : "buttonForForm "} type="submit" onClick={this.errorReport}>Skicka in</button>
-    <div className="cross"></div>
+    <Link to="/"><div className="cross"></div></Link>  
     </form>
      </div>
   </CSSTransitionGroup>

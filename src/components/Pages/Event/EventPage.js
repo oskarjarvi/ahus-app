@@ -26,11 +26,12 @@ class EventPage extends Component {
         transitionLeave={false}>
         <div className="page Event">
           <Link to="/"><li className="backToMainPage"></li></Link>
+          <div className="newsWrapper">
             <div className="newsIcon"></div>
             <h1 className="newsHeader">Event</h1>
             <p className="newsSchool">Kungliga Tekniska högskolan</p>
-              {this.state.contents.map(content =>
-                <div key={content.id} className="newsBox">
+            {this.state.contents.map(content =>
+              <div key={content.id} className="newsBox">
                 <div  className={`newsImage ${content.id}`}></div>
                 <div className="newsContent">
                   <p className="contentBold">{content.title}</p>
@@ -38,8 +39,9 @@ class EventPage extends Component {
                 </div>
                 <div className="newsArrow"></div>
               </div>
-              )}
-            </div>
+            )}
+          </div>
+        </div>
        </CSSTransitionGroup>
      )
    }

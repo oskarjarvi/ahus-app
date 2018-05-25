@@ -24,13 +24,14 @@ class MyConnections extends Component {
         transitionLeave={false}>
       <div className="page Connections">
         <Link to="/"><li className="backToMainPage"></li></Link>
+        <div className="connectionsWrapper">
           <div className="connectionsIcon"></div>
           <h1 className="newsHeader">MINA KONTAKTER</h1>
           <p className="newsSchool">Kungliga Tekniska högskolan</p>
 
           {this.state.contents.map(content =>
-          <div key={content.id} className="newsBox">
-            <div  className={`connectionsImage ${content.id}`}></div>
+            <div key={content.id} className="newsBox">
+              <div  className={`connectionsImage ${content.id}`}></div>
               <div className="connectionsContent">
                 <p className="contentBold">{content.title}</p>
                 <p className="contentLight">{content.content}</p>
@@ -41,8 +42,9 @@ class MyConnections extends Component {
               <div className="connectionsBox Phone">
                 <div className="connectionsPhone"></div>
               </div>
-          </div>
+            </div>
           )}
+        </div>
 
         </div>
      </CSSTransitionGroup>

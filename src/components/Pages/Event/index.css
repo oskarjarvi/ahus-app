@@ -16,6 +16,11 @@ li {
   left: 0;
   margin: 0;
   padding: 0;
+
+}
+
+.newsWrapper {
+  margin-top: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
