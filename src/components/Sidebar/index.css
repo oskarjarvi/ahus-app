@@ -43,7 +43,7 @@
 .houseEventsLinkIcon {
   background-image: url('../icons/utropstacken.svg');
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size:  100% 100%;
   height: 32.61px;
   width: 6.15px;
   margin-bottom: 19.21px;

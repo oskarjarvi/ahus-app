@@ -24,10 +24,9 @@ html,body{
   background-color: #FFEB00;
 }
 .sidebarPosition{
-  position: fixed;
-  bottom: 81px;
-  top: 368px;
-  left: 16px;
+  display: flex;
+  justify-content: center;
+  margin-top: 21px;
 }
 .page {
   color: black;

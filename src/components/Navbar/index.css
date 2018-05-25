@@ -4,16 +4,21 @@
   width: 92%;
   position: fixed;
   bottom: 16px;
+  left: 16px;
   margin-top: 16px;
   border-radius: 3px;
 }
+
 .navbar.Closed{
   transition: 2s;
 }
 .navbar.Open {
-  height: 382px;
+  height: 57.3vh;
   transition: 2s;
   z-index: 100;
+  bottom: 16px;
+  left: 16px;
+  transition: 2s;
 }
 
 .staticMenu {

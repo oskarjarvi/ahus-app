@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import base from '../base';
+import { Link } from 'react-router-dom';
 import './index.css';
 class Login extends Component {
   constructor(props) {
@@ -42,6 +43,7 @@ class Login extends Component {
               id="InputPassword"/>
           </div>
         <button className="loginButton" type="submit" onClick={this.login}>Login</button>
+        <Link to="/"><div className="cross"></div></Link>
         </form>
       </div>
 
