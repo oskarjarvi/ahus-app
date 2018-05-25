@@ -23,9 +23,11 @@ class ErrorReport extends Component {
 
   errorReport(e){
     e.preventDefault();
+
     this.setState (
     base.database().ref('error-report').child('unconfirmed').push(
        {
+
             name: this.state.name,
             building: this.state.building,
             roomnumber: this.state.roomnumber,
