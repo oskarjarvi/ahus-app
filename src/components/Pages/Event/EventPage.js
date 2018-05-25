@@ -5,6 +5,17 @@ import '../../../App.css';
 import './index.css'
 
 class EventPage extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+        contents: [
+          {id: 'One', title: 'Cykelvecka', content: 'Vecka 20'},
+          {id: 'Two', title: 'Examensvecka', content: 'Vecka 23'},
+          {id: 'Three', title: 'Mjölkens dag', content: '1 juni'}
+        ]
+  };
+}
+
   render() {
     return (
       <CSSTransitionGroup
@@ -18,34 +29,19 @@ class EventPage extends Component {
             <div className="newsIcon"></div>
             <h1 className="newsHeader">Event</h1>
             <p className="newsSchool">Kungliga Tekniska högskolan</p>
-            <div className="newsBox">
-              <div className="newsImage"></div>
+              {this.state.contents.map(content =>
+                <div className="newsBox">
+                <div key={content.id} className={`newsImage ${content.id}`}></div>
                 <div className="newsContent">
-                  <p className="contentBold">Cykelvecka</p>
-                  <p className="contentLight">Vecka 20</p>
+                  <p className="contentBold">{content.title}</p>
+                  <p className="contentLight">{content.content}</p>
                 </div>
                 <div className="newsArrow"></div>
-            </div>
-            <div className="newsBox">
-              <div className="newsImage Two"></div>
-              <div className="newsContent">
-                <p className="contentBold">Examensvecka</p>
-                <p className="contentLight">Vecka 23</p>
               </div>
-              <div className="newsArrow"></div>
+              )}
             </div>
-            <div className="newsBox">
-              <div className="newsImage Three"></div>
-                <div className="newsContent">
-                  <p className="contentBold">Mjölkens dag</p>
-                  <p className="contentLight">1 juni</p>
-                </div>
-                <div className="newsArrow"></div>
-            </div>
-         </div>
        </CSSTransitionGroup>
      )
    }
  }
-
 export default EventPage;
