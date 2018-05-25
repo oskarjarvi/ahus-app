@@ -30,8 +30,8 @@ class EventPage extends Component {
             <h1 className="newsHeader">Event</h1>
             <p className="newsSchool">Kungliga Tekniska högskolan</p>
               {this.state.contents.map(content =>
-                <div className="newsBox">
-                <div key={content.id} className={`newsImage ${content.id}`}></div>
+                <div key={content.id} className="newsBox">
+                <div  className={`newsImage ${content.id}`}></div>
                 <div className="newsContent">
                   <p className="contentBold">{content.title}</p>
                   <p className="contentLight">{content.content}</p>
