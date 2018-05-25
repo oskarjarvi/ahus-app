@@ -44,7 +44,7 @@ li {
   align-items: center;
   background-color: #FFEB00;
 }
-.newsImage {
+.disturbanceImage {
   background-image: url('../../icons/hjalm.svg');
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -52,11 +52,11 @@ li {
   width: 54.66px;
 }
 
-.Two {
+.disturbanceImage.Two {
   background-image: url('../../icons/vatten_stopp.svg');
 }
 
-.Three {
+.disturbanceImage.Three {
   background-image: url('../../icons/mala.svg');
 }
 

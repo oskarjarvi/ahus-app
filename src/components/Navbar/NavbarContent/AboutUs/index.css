@@ -1,0 +1,12 @@
+.aboutUsWrapper {
+  margin-left: 16px;
+  margin-bottom: 90px;
+}
+
+.aboutUsName {
+  height: 24px;
+  font-family: "Chronicle Deck Cond";
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29px;
+}

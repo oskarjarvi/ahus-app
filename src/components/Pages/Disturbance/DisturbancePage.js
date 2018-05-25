@@ -30,7 +30,7 @@ class DisturbancePage extends Component {
             {this.state.contents.map(content =>
               <div key={content.id} className="newsBox">
                 <div className="iconWrapper">
-                  <div  className={`newsImage ${content.id}`}></div>
+                  <div  className={`disturbanceImage ${content.id}`}></div>
                 </div>
                 <div className="newsContent">
                   <p className="contentBold">{content.title}</p>

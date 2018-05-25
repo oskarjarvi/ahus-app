@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
-import './NavbarContent.css'
+import '../NavbarContent.css'
+import './index.css';
 class Houseguide extends Component {
   render(){
     return (
-      <div className="Information">
-      Husguider
+      <div className="houseguideWrapper">
+        <h1 className="houseguideName">Husguider</h1>
       </div>
     )
   }

@@ -1,10 +1,10 @@
 import React, { Component } from "react";
-import Search from "./NavbarContent/Search";
-import YourCampus from "./NavbarContent/YourCampus";
-import Parking from "./NavbarContent/Parking";
-import Information from "./NavbarContent/Information";
-import Houseguide from "./NavbarContent/Houseguide";
-import AboutUs from "./NavbarContent/AboutUs";
+import Search from "./NavbarContent/Search/Search";
+import YourCampus from "./NavbarContent/YourCampus/YourCampus";
+import Service from "./NavbarContent/Service/Service";
+import Information from "./NavbarContent/Information/Information";
+import Houseguide from "./NavbarContent/Houseguide/Houseguide";
+import AboutUs from "./NavbarContent/AboutUs/AboutUs";
 
 import Main from '../Main/Main';
 import HamburgerNavigation from '../Main/HamburgerNavigation';
@@ -33,7 +33,7 @@ class Navbar extends Component {
           <Search />
           <YourCampus />
           <Information />
-          <Parking />
+          <Service />
           <Houseguide />
           <AboutUs />
 
