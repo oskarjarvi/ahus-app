@@ -38,8 +38,8 @@ class App extends Component {
                 <Sidebar>
                 </Sidebar>
                 <Navigation></Navigation>
-                <Navbar />
               </div>
+              <Navbar />
             </div>) :
           ( <div>
               <StartPage></StartPage>

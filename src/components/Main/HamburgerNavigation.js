@@ -33,7 +33,7 @@ class HamburgerNavigation extends Component {
       <Link to="/MyFancyComponent">
         <li className="box">
           {this.state.map ? (
-            <div className="map">
+            <div className="mapContainer">
               <MyFancyComponent></MyFancyComponent>
             </div>) : <div onClick={this.eventHandler.login}>ANVÄND MIN POSITION</div>}
         </li>
