@@ -11,11 +11,12 @@ class confirmed extends Component
   }
   componentDidMount()
   {
-    
-    base.database().ref('error-report').once('value').then(function(snapshot)
+    var key = Object.keys(snapshot.val())[0];
+
+    base.database().ref('error-report/').once('value').then(function(snapshot)
     {
       this.setState({reports : snapshot.val()})
-    }
+    })
   }
   render()
   {

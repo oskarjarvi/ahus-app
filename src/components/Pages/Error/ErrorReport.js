@@ -13,7 +13,7 @@ class ErrorReport extends Component {
 
     this.state = {
       name: '',
-      building: '',
+      address: '',
       roomnumber: '',
       message: '',
       email: '',
@@ -23,33 +23,22 @@ class ErrorReport extends Component {
 
   errorReport(e){
     e.preventDefault();
-    base.database().ref('error-report').push(
+    base.database().ref('error-report').child('unconfirmed').push(
           {
             name: this.state.name,
-            building: this.state.building,
+            address: this.state.address,
             roomnumber: this.state.roomnumber,
             message: this.state.message,
             email: this.state.email,
             phone: this.state.phone
           }
         );
-        this.clearForm()
   }
 
   handleChange(e){
+    console.log(e.target.name);
     this.setState({  [e.target.name]: e.target.value });
   }
-
-  clearForm = () => {
-    this.setState({
-      name: '',
-      building: '',
-      roomnumber: '',
-      message: '',
-      email: '',
-      phone: ''
-    })}
-
     render() {
       return(
   <CSSTransitionGroup
@@ -58,57 +47,44 @@ class ErrorReport extends Component {
     transitionAppearTimeout={500}
     transitionEnter={false}
     transitionLeave={false}>
-    <div className="page Error">
+    <div className="page error">
       <Link to="/"><li className="backToMainPage"></li></Link>
-        <form className="errorForm">
-          <h1 className="errorHeader">Felanmälan</h1>
-          <div className="formWrapper">
-            <div>
-              <label className ="labelForName" htmlFor="name">Namn*</label>
-            </div>
-            <input className ="inputForName" value={this.state.name} onChange={this.handleChange} type="text" placeholder=" För- och efternamn" name="name" required />
+      <h1>Felanmälan</h1>
+        <form>
+          <div>
+            <label htmlFor="name">Namn*</label>
+            <input className ="name"value={this.state.name} onChange={this.handleChange} type="text" placeholder="namn" name="name" required />
           </div>
 
-          <div className="formWrapper">
-            <div>
-              <label className ="labelForName" htmlFor="building">Byggnad på campus*</label>
-            </div>
-            <input className ="inputForName" value={this.state.address} onChange={this.handleChange} type="text" placeholder=" t.ex. KTH Hallen" name="building" required />
+          <div>
+            <label htmlFor="address">Adress*</label>
+            <input className ="adress"value={this.state.address} onChange={this.handleChange} type="text" placeholder="adress" name="address" required />
           </div>
 
-          <div className="formWrapper">
-            <div>
-              <label className ="labelForName" htmlFor="roomnumber">Rum/rumsnr*</label>
-            </div>
-            <input className ="inputForName" value={this.state.roomnumber} onChange={this.handleChange} type="text" name="roomnumber" required />
+          <div>
+            <label htmlFor="roomnumber">Rum/rumsnr*</label>
+            <input className ="roomnumber"value={this.state.roomnumber} onChange={this.handleChange} type="text" name="roomnumber" required />
           </div>
 
-          <div className="formWrapper">
-            <div>
-              <label className ="labelForName" htmlFor="message">Beskrivning(max 3000 tecken)*</label>
-            </div>
-            <textarea className ="labelForMessage" name="message" placeholder=" Beskriv problemet och mer detaljerad position." value={this.state.message} onChange={this.handleChange}></textarea>
+          <div>
+            <label htmlFor="message">Beskrivning(max 3000 tecken)*</label>
+            <textarea name="message" value={this.state.message} onChange={this.handleChange}></textarea>
           </div>
 
-          <div className="formWrapper">
-            <div>
-              <label className ="labelForName" htmlFor="email">Mail</label>
-            </div>
-            <input className ="inputForName" value={this.state.email} onChange={this.handleChange} type="text" placeholder=" För att kunna återkoppla" name="email" required />
+          <div>
+            <label htmlFor="email">Mail</label>
+            <input className ="email"value={this.state.email} onChange={this.handleChange} type="text" name="email" required />
           </div>
 
-          <div className="formWrapper">
-            <div>
-              <label className ="labelForName" htmlFor="phone">Telefon</label>
-            </div>
-            <input className ="inputForName" value={this.state.phone} onChange={this.handleChange} type="text" placeholder=" För att kunna återkoppla" name="phone" required />
+          <div>
+            <label htmlFor="phone">Telefon</label>
+            <input className ="phone"value={this.state.phone} onChange={this.handleChange} type="text" name="phone" required />
           </div>
 
-    <p className="gdprInfo">Eran information kommer endast användas i syfte för att åtgärda det
+    <p>Eran information kommer endast användas i syfte för att åtgärda det
      problem som anmälts. Efter genomfört arbete raderas er information
      från våran databas.</p>
-   <button className={this.state.name='' ? "buttonForForm Active" : "buttonForForm "} type="submit" onClick={this.errorReport}>Skicka in</button>
-    <div className="cross"></div>
+   <button type="submit" onClick={this.errorReport}>Skicka in</button>
     </form>
      </div>
   </CSSTransitionGroup>

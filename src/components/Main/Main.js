@@ -4,8 +4,6 @@ import HomeForWorkers from '../LoginComponents/HomeForWorkers';
 
 import UseMyLocation from '../StartPage/UseMyLocation';
 
-
-
 class Main extends Component {
 render(){
   return(

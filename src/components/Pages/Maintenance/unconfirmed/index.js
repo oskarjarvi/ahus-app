@@ -11,10 +11,10 @@ class unconfirmed extends Component
   }
   componentDidMount()
   {
-    base.database().ref('error-report').once('value').then(function(snapshot)
+    base.database().ref('error-report/').once('value').then(function(snapshot)
     {
       this.setState({reports : snapshot.val()})
-    }
+    })
   }
   render()
   {
@@ -34,7 +34,7 @@ class unconfirmed extends Component
             <h1 className="Header">Obekräftade Felanmälningar</h1>
             <div className="order">
             <p className="contentBold"> {{r.message}} </p>
-
+            <p className="content"
             </div>
             </div>
 
