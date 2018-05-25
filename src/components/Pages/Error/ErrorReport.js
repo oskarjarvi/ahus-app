@@ -33,22 +33,22 @@ class ErrorReport extends Component {
             phone: this.state.phone
           }
         );
-        // this.clearForm()
+        this.clearForm()
   }
 
   handleChange(e){
     this.setState({  [e.target.name]: e.target.value });
   }
 
-  // clearForm = () => {
-  //   this.setState({
-  //     name: '',
-  //     building: '',
-  //     roomnumber: '',
-  //     message: '',
-  //     email: '',
-  //     phone: ''
-  //   })}
+  clearForm = () => {
+    this.setState({
+      name: '',
+      building: '',
+      roomnumber: '',
+      message: '',
+      email: '',
+      phone: ''
+    })}
 
     render() {
       return(
@@ -108,7 +108,7 @@ class ErrorReport extends Component {
      problem som anmälts. Efter genomfört arbete raderas er information
      från våran databas.</p>
    <button className={this.state.name='' ? "buttonForForm Active" : "buttonForForm "} type="submit" onClick={this.errorReport}>Skicka in</button>
-    <Link to="/"><div className="cross"></div></Link>  
+    <Link to="/"><div className="cross"></div></Link>
     </form>
      </div>
   </CSSTransitionGroup>
