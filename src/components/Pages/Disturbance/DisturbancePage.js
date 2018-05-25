@@ -1,21 +1,18 @@
 import React, { Component } from "react";
 import {CSSTransitionGroup} from "react-transition-group";
 import { Link } from 'react-router-dom';
-import '../../../App.css';
-import './index.css'
-
-class EventPage extends Component {
+import './index.css';
+class DisturbancePage extends Component {
   constructor(props) {
     super(props);
     this.state = {
         contents: [
-          {id: 'One', title: 'Cykelvecka', content: 'Vecka 20'},
-          {id: 'Two', title: 'Examensvecka', content: 'Vecka 23'},
-          {id: 'Three', title: 'Mjölkens dag', content: '1 juni'}
+          {id: 'One', title: 'Renovering av entre', content: 'Under sommaren'},
+          {id: 'Two', title: 'Byte av handfat', content: 'Tisdag den 22 maj'},
+          {id: 'Three', title: 'Målar om i biblioteket', content: 'Onsdag 25 april'}
         ]
   };
 }
-
   render() {
     return (
       <CSSTransitionGroup
@@ -24,15 +21,17 @@ class EventPage extends Component {
         transitionAppearTimeout={500}
         transitionEnter={false}
         transitionLeave={false}>
-        <div className="page Event">
+        <div className="page Disturbance">
           <Link to="/"><li className="backToMainPage"></li></Link>
           <div className="newsWrapper">
-            <div className="newsIcon"></div>
-            <h1 className="newsHeader">Event</h1>
+            <div className="disturbanceIcon"></div>
+            <h1 className="newsHeader">DRIFTSTÖRNINGAR</h1>
             <p className="newsSchool">Kungliga Tekniska högskolan</p>
             {this.state.contents.map(content =>
               <div key={content.id} className="newsBox">
-                <div  className={`newsImage ${content.id}`}></div>
+                <div className="iconWrapper">
+                  <div  className={`disturbanceImage ${content.id}`}></div>
+                </div>
                 <div className="newsContent">
                   <p className="contentBold">{content.title}</p>
                   <p className="contentLight">{content.content}</p>
@@ -42,8 +41,9 @@ class EventPage extends Component {
             )}
           </div>
         </div>
-       </CSSTransitionGroup>
+     </CSSTransitionGroup>
      )
-   }
- }
-export default EventPage;
+  }
+}
+
+export default DisturbancePage;

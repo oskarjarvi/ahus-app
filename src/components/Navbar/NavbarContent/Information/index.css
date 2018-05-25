@@ -1,0 +1,12 @@
+.informationWrapper {
+  margin-bottom: 24px;
+  margin-left: 16px;
+}
+.informationName {
+  height: 24px;
+  width: 201px;
+  font-family: "Chronicle Deck Cond";
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29px;
+}

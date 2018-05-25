@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import Navigation from '../ExtraRoutes/Navigation';
+import ExtraRoutes from '../ExtraRoutes/ExtraRoutes';
 import './index.css';
 
 class HeaderHomePage extends Component {
@@ -11,7 +13,10 @@ class HeaderHomePage extends Component {
       <div className="notification">
         <p className="messageBold">Oberoende busstider och försenade tåg</p>
         <p className="messagelight">Pga. tekniska fel på SL’s huvudkontor så är idag…</p>
-        <div className="arrow"></div>
+
+          <Navigation> </Navigation>
+          <ExtraRoutes> </ExtraRoutes>
+
       </div>
   </div>)
   }

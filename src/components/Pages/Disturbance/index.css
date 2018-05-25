@@ -12,13 +12,6 @@ li {
   width: 24px;
 }
 
-.page.Event {
-  left: 0;
-  margin: 0;
-  padding: 0;
-
-}
-
 .newsWrapper {
   margin-top: 50px;
   display: flex;
@@ -26,10 +19,11 @@ li {
   align-items: center;
 }
 
-.newsIcon {
-  background-image: url('../../icons/ballongPink.svg');
+.disturbanceIcon {
+  background-image: url('../../icons/driftstorning.svg');
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 100%;
+  margin-bottom: 40px;
   height: 55.81px;
   width: 42.38px;
 }
@@ -40,22 +34,30 @@ li {
   margin: 16px;
   position: relative;
 }
-.newsImage {
+.iconWrapper {
   float: left;
-  background-image: url('../../images/cykel.png');
-  background-repeat: no-repeat;
-	height: 104px;
+  height: 104px;
   width: 104px;
   border-radius: 3px;
-  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFEB00;
+}
+.disturbanceImage {
+  background-image: url('../../icons/hjalm.svg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 32px;
+  width: 54.66px;
 }
 
-.Two {
-  background-image: url('../../images/graduation.png');
+.disturbanceImage.Two {
+  background-image: url('../../icons/vatten_stopp.svg');
 }
 
-.Three {
-  background-image: url('../../images/milkensdag.png');
+.disturbanceImage.Three {
+  background-image: url('../../icons/mala.svg');
 }
 
 .newsContent {

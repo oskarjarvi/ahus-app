@@ -5,9 +5,9 @@
   height: 40px;
   width: 291px;
   background-color: #FFFFFF;
-  margin: 16px 4px 16px 16px;
   position: relative;
   display: flex;
+  margin-right: 4px;
 }
 .extraContent {
   display: flex;
@@ -32,6 +32,7 @@
   align-items: center;
 }
 .extraWrapper {
+  margin: 16px 4px 16px 16px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -44,5 +45,5 @@
   width: 16px;
 }
 .extraPageWrapper {
-  margin-top: 104px;
+  margin-top: 60px;
 }
