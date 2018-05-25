@@ -1,15 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 50 (54983) - http://www.bohemiancoding.com/sketch -->
-    <title>close</title>
-    <desc>Created with Sketch.</desc>
-    <defs></defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="H-menu" transform="translate(-176.000000, -616.000000)" fill="#FFFFFF">
-            <g id="close" transform="translate(176.000000, 616.000000)">
-                <rect id="Rectangle-5" transform="translate(12.000000, 12.000000) rotate(-225.000000) translate(-12.000000, -12.000000) " x="9.11111111" y="-1.86666667" width="5.77777778" height="27.7333333" rx="1"></rect>
-                <rect id="Rectangle-5-Copy-2" transform="translate(12.000000, 12.000000) rotate(-315.000000) translate(-12.000000, -12.000000) " x="9.11111111" y="-1.86666667" width="5.77777778" height="27.7333333" rx="1"></rect>
-            </g>
-        </g>
-    </g>
-</svg>
+<svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"><g fill="#FFF" fill-rule="evenodd"><rect transform="rotate(135 12 12)" x="9.111" y="-1.867" width="5.778" height="27.733" rx="1"/><rect transform="rotate(45 12 12)" x="9.111" y="-1.867" width="5.778" height="27.733" rx="1"/></g></svg>
