@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React ,{ Component } from "react";
 import base from '../../../base';
 import {CSSTransitionGroup} from "react-transition-group";
 import { Link } from 'react-router-dom';
@@ -10,25 +10,26 @@ class unconfirmed extends Component
   constructor(props)
   {
     super(props);
-    this.state =
-    {
-      reports : [],
-    }
+  }
+  state =
+  {
+    reports : [],
   }
   componentDidMount()
   {
-    base.database().ref('error-report/').once('value').then(function(snapshot)
+    base.database().ref('error-report/unconfirmed').once('value').then(function(snapshot)
     {
-      this.setState({reports:snapshot.val()})
-    })
+      this.setState({reports: snapshot.val()})
+    }),
+    function (errorObject) {
+  console.log("The read failed: " + errorObject.code);
+}
   }
   render()
   {
-    return (
-      this.state.reports.map((r) =>
-        {
-          return
-          (
+    return this.state.reports.map(r =>
+      (
+
             <CSSTransitionGroup
             transitionName="worksTransition"
             transitionAppear={true}
@@ -45,8 +46,9 @@ class unconfirmed extends Component
             </div>
             </div>
             </CSSTransitionGroup>
-          )}
-        ))
+          )
+          )
+
         }
       }
 export default unconfirmed
