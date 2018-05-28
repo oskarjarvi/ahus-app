@@ -6,9 +6,9 @@ import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 import Push from 'push.js';
 
-Push.create("Hello!", {
+Push.create("Akademiska Hus", {
     body: "There´s a new event'!",
-    icon: './icon.png',
+    icon: 'icon.png',
     timeout: 4000,
     onClick: function () {
         window.focus();

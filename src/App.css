@@ -39,3 +39,7 @@ html,body{
   left: 76px;
   bottom: 236px;
 }
+
+.homePageWrapper {
+  width: 100%;
+}

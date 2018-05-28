@@ -1,6 +1,6 @@
 .headerHome {
   height: 257px;
-  width: 375px;
+  width: 100vw;
   background-image: url('../icons/kthSchool.png');
   background-repeat: no-repeat;
   background-size: 100% 100%;
