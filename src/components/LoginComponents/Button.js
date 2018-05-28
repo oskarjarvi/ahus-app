@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import base from '../base';
 import Login from './Login'
 import HomeForWorkers from './HomeForWorkers'
-
+import './index.css';
 
 class Button extends Component {
   constructor(props){

@@ -2,21 +2,22 @@
   color: white;
   margin-top: 10px;
 }
-.loginLink {
+/* .loginLink {
   height: 43px;
   margin-top: 0;
   padding: 0;
+  transition: 3s;
 }
 .loginLink.Active {
+  transition: 3s;
   height: 61vh;
   width: 345px;
   z-index: 10;
   position: relative;
   bottom: 105px;
-
   border-radius: 3px;
   transition: 0.5s;
-}
+} */
 
 .loginForm {
   color: white;
@@ -24,10 +25,13 @@
   position: absolute;
   top: 206px;
   left: 16px;
-  z-index: 1000;
+  z-index: 10;
   height: 50vh;
   width: 92vw;
   background-color: #6EC81E;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 .loginButton {
   height: 32px;
@@ -35,13 +39,16 @@
   border-radius: 3px;
   background-color: #FFFFFF;
   position: absolute;
-  bottom: 104px;
+  bottom: 70px;
+  right: 13px;
 }
 .loginHeader {
   font-family: "Chronicle Deck Cond";
   font-size: 24px;
   font-weight: 600;
   line-height: 29px;
+  margin-top: 29px;
+  margin-left: 18px;
 }
 
 .loginLabel {
@@ -52,7 +59,25 @@
   font-size: 16px;
   font-weight: 300;
   line-height: 22px;
+  margin-left: 15px;
+}
+.Mail {
+  margin-left: 0px;
+  background-color: #6EC81E;
 }
 .loginInput {
   margin-top: 23px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.loginContent {
+  height: 32px;
+  width: 311px;
+  border-radius: 3px;
+  border: none;
+  margin-left: 16px;
+}
+.signInButton {
+  transition: 3s;
 }
