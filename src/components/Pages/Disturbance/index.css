@@ -22,7 +22,7 @@ li {
 .disturbanceIcon {
   background-image: url('../../icons/driftstorning.svg');
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: contain;
   margin-bottom: 40px;
   height: 55.81px;
   width: 42.38px;
@@ -47,9 +47,9 @@ li {
 .disturbanceImage {
   background-image: url('../../icons/hjalm.svg');
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: contain;
   height: 32px;
-  width: 54.66px;
+  width: 50.66px;
 }
 
 .disturbanceImage.Two {

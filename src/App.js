@@ -5,19 +5,20 @@ import Navigation from './components/Sidebar/Navigation';
 import HeaderHomePage from './components/Header';
 import School from './components/School';
 import Navbar from './components/Navbar';
+import { Link } from 'react-router-dom';
 import './App.css';
 
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      toggle: false
+      homepage: false
     };
     this.eventHandler = this.eventHandler.bind(this);
   }
   eventHandler(event) {
     this.setState(prevState => ({
-      toggle: !prevState.toggle
+      homepage: !prevState.homepage
     }));
   }
 
@@ -30,7 +31,7 @@ class App extends Component {
         <header>
 
         </header>
-          {this.state.toggle ?
+          {this.state.homepage ?
             ( <div>
               <HeaderHomePage></HeaderHomePage>
               <School></School>
@@ -43,9 +44,10 @@ class App extends Component {
             </div>) :
           ( <div>
               <StartPage></StartPage>
+              <Link to="/"><li className="toggleLink" onClick={this.eventHandler}></li></Link>
+
             </div> ) }
 
-          <button onClick={this.eventHandler}>testetet</button>
 
       </div>
     );

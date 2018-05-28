@@ -35,7 +35,7 @@ class HamburgerNavigation extends Component {
           {this.state.map ? (
             <div className="mapContainer">
               <MyFancyComponent></MyFancyComponent>
-            </div>) : <div onClick={this.eventHandler.login}>ANVÄND MIN POSITION</div>}
+            </div>) : <div onClick={this.eventHandler.map}>ANVÄND MIN POSITION</div>}
         </li>
       </Link>
 
@@ -43,14 +43,13 @@ class HamburgerNavigation extends Component {
       <Link to="/"><li className="box">SENAST VALDA</li></Link>
       <Link to="/Button"><li className="box login">
         {this.state.login ?
-          <div>
+          <div class="test">
              <Button></Button>
            </div>
-         : <div onClick={this.eventHandler.map}>LOGGA IN SOM ANSTÄLLD</div> }
+         : <div onClick={this.eventHandler.login}>LOGGA IN SOM ANSTÄLLD</div> }
       </li></Link>
 
 
-      <Link to="/"><li>Tillbaka</li></Link>
     </ul>
   </div>
     )

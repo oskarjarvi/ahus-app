@@ -31,3 +31,11 @@ html,body{
 .page {
   color: black;
 }
+
+.toggleLink {
+  height: 40px;
+  width: 27px;
+  position: relative;
+  left: 76px;
+  bottom: 236px;
+}

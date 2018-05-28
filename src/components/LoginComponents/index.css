@@ -18,20 +18,6 @@
   transition: 0.5s;
 }
 
-.loginLink {
-  transition: 0.5s;
-}
-
-/* .loginForm {
-  color: white;
-  border-radius: 3px;
-  position: relative;
-  bottom: 146px;
-  height: 50vh;
-  width: 51.6vh;
-  background-color: #6EC81E;
-} */
-
 .loginForm {
   color: white;
   border-radius: 3px;

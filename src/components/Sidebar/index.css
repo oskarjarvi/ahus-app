@@ -115,9 +115,9 @@
 .extraLinkPlus {
   background-image: url('../icons/laggTill.svg');
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: contain;
   height: 24px;
-  width: 50px;
+  width: 28px;
   margin-bottom: 11px;
 }
 /* Position and transition */
