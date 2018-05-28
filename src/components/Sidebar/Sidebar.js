@@ -5,27 +5,19 @@ import EventPage from '../Pages/Event/EventPage';
 import MyConnections from '../Pages/Connections/MyConnections';
 import NewPage from '../Pages/NewPage/NewPage';
 import base from './../base';
+import unconfirmed from '../Pages/Maintenance/unconfirmed';
+import confirmed from '../Pages/Maintenance/confirmed';
 
 class Sidebar extends Component {
-  constructor(props)
-  {
-    super(props)
-    this.state = {
-      user : base.auth().currentUser,
-    }
-  }
 
 
 render(){
   return(
     <Switch>
       <Route exact path="/ErrorReport" component={ErrorReport}/>
-//If user is not logged in show these
-      <Route exact path="/EventPage" component={EventPage}/>
-      <Route exact path="/MyConnections" component={MyConnections}/>
-//if user is logged in show these
-<Route exact path="/EventPage" component={EventPage}/>
-<Route exact path="/MyConnections" component={MyConnections}/>
+
+        <Route exact path="Maintenance/unconfirmed" component={unconfirmed}/>
+        <Route exact path="Maintenance/confirmed" component={confirmed}/>
 
       <Route exact path="/NewPage" component={NewPage}/>
 
