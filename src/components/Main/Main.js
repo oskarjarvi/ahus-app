@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Route, Switch} from 'react-router-dom';
 import HomeForWorkers from '../LoginComponents/HomeForWorkers';
 import Button from '../LoginComponents/Button';
-import MyFancyComponent from '../StartPage/Container';
+import MyFancyComponent from '../MapComponent/Container';
 
 
 

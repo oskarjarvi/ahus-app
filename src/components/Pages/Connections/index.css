@@ -13,7 +13,7 @@
 .connectionsIcon {
   background-image: url('../../icons/kontakter_green.svg');
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: contain;
   height: 55.81px;
   width: 42.38px;
   margin-bottom: 15px;

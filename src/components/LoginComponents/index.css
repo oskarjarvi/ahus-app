@@ -1,24 +1,3 @@
-.loginLink p {
-  color: white;
-  margin-top: 10px;
-}
-/* .loginLink {
-  height: 43px;
-  margin-top: 0;
-  padding: 0;
-  transition: 3s;
-}
-.loginLink.Active {
-  transition: 3s;
-  height: 61vh;
-  width: 345px;
-  z-index: 10;
-  position: relative;
-  bottom: 105px;
-  border-radius: 3px;
-  transition: 0.5s;
-} */
-
 .loginForm {
   color: white;
   border-radius: 3px;

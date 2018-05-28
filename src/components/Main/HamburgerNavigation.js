@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import Button from '../LoginComponents/Button';
-import MyFancyComponent from '../StartPage/Container';
+import MyFancyComponent from '../MapComponent/Container';
 import './index.css';
 class HamburgerNavigation extends Component {
   constructor(props) {

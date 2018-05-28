@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import base from '../base';
+import base from '../Config/base';
 import { Link } from 'react-router-dom';
 import './index.css';
 class Login extends Component {

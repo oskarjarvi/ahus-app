@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import {CSSTransitionGroup} from "react-transition-group";
 import { Link } from 'react-router-dom';
 import '../../../App.css';
-import base from '../../base';
+import base from '../../Config/base';
 import './index.css';
 
 class ErrorReport extends Component {
