@@ -10,17 +10,13 @@ import confirmed from '../Pages/Maintenance/confirmed';
 
 class Sidebar extends Component {
 
-
 render(){
   return(
     <Switch>
       <Route exact path="/ErrorReport" component={ErrorReport}/>
-
-        <Route exact path="Maintenance/unconfirmed" component={unconfirmed}/>
-        <Route exact path="Maintenance/confirmed" component={confirmed}/>
-
+      <Route exact path="/MyConnections" component={MyConnections}/>
+      <Route exact path="/EventPage" component={EventPage}/>
       <Route exact path="/NewPage" component={NewPage}/>
-
     </Switch>
   )
 
