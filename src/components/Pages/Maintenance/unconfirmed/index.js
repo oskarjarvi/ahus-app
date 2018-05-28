@@ -10,16 +10,33 @@ class unconfirmed extends Component
   constructor(props)
   {
     super(props);
+    this.snapshotToArray = this.snapshotToArray.bind(this);
+    this.state =
+    {
+      reports : [],
+    }
   }
-  state =
-  {
-    reports : [],
-  }
+
+snapshotToArray(snapshot) {
+    var returnArr = [];
+
+    snapshot.forEach(function(childSnapshot) {
+        var item = childSnapshot.val();
+        item.key = childSnapshot.key;
+
+        returnArr.push(item);
+    });
+
+    return returnArr;
+}
   componentDidMount()
   {
-    base.database().ref('error-report/unconfirmed').once('value').then(function(snapshot)
+    base.database().ref('error-report/unconfirmed').once('value').then((snapshot) =>
     {
-      this.setState({reports: snapshot.val()})
+       let data = this.snapshotToArray(snapshot)
+       this.setState({reports: data})
+       console.log(this.state.reports);
+
     }),
     function (errorObject) {
   console.log("The read failed: " + errorObject.code);
@@ -27,9 +44,8 @@ class unconfirmed extends Component
   }
   render()
   {
-    return this.state.reports.map(r =>
+    return this.state.reports.map((r,i) =>
       (
-
             <CSSTransitionGroup
             transitionName="worksTransition"
             transitionAppear={true}
@@ -42,7 +58,7 @@ class unconfirmed extends Component
             <h1 className="Header">Obekräftade Felanmälningar</h1>
             <div className="order">
             <p className="contentBold"> ArbetsOrder </p>
-            <p className="content"> </p>
+            <p className="content" key ={i}> </p>
             </div>
             </div>
             </CSSTransitionGroup>
