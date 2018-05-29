@@ -32,7 +32,7 @@ class App extends Component {
 
         </header>
           {this.state.homepage ?
-            ( <div>
+            ( <div className="homePageWrapper">
               <HeaderHomePage></HeaderHomePage>
               <School></School>
               <div className="sidebarPosition">

@@ -16,7 +16,7 @@ class DisturbancePage extends Component {
   render() {
     return (
       <CSSTransitionGroup
-        transitionName="worksTransition"
+        transitionName="sideTransition"
         transitionAppear={true}
         transitionAppearTimeout={500}
         transitionEnter={false}
