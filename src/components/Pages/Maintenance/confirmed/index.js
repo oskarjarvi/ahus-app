@@ -31,7 +31,7 @@ class confirmed extends Component
   }
   componentDidMount()
   {
-    base.database().ref('error-report/unconfirmed').once('value').then((snapshot) =>
+    base.database().ref('error-report').once('value').then((snapshot) =>
     {
       let data = this.snapshotToArray(snapshot)
       this.setState({reports: data})
@@ -47,8 +47,6 @@ class confirmed extends Component
   render()
   {
     return(
-
-
           <CSSTransitionGroup
           transitionName="worksTransition"
           transitionAppear={true}
@@ -59,23 +57,14 @@ class confirmed extends Component
 
           <div className="page confirmed">
           <Link to="/"><li className="backToMainPage"></li></Link>
-          <h1 className="Header">Bekräftade Felanmälningar</h1>
+          <h1 className="Header">Pågående</h1>
           {
           this.state.reports.map((r,i) => (
           <div className="report"key = {i}>
           <p className="bold"> ArbetsOrder </p>
           <p className="light">{i} </p>
-
-          <p className="bold"> Byggnad </p>
-          <p className="light">{r.building} </p>
-
-          <p className="bold"> Rum </p>
-          <p className="light">{r.roomnumber} </p>
-
-          <p className="bold"> KontaktPerson </p>
-          <p className="light">{r.name} </p>
-
-</div>
+          <Link to="/CaseInfo"><div className="newsArrow"></div></Link>
+          </div>
 ))
   }
           </div>

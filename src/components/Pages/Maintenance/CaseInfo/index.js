@@ -1,49 +1,55 @@
-import React, { Component } from "react";
-import base from '../../../Config/base';
+import React ,{ Component } from "react";
+import {CSSTransitionGroup} from "react-transition-group";
+import { Link } from 'react-router-dom';
 import './CaseInfo.css';
 
 
-class confirmed extends Component
+class CaseInfo extends Component
 {
-  this.state =
-  {
-    reports: [];
-  }
-  componentDidMount()
-  {
-    var key = Object.keys(snapshot.val())[0];
-
-    base.database().ref('error-report/').once('value').then(function(snapshot)
-    {
-      this.setState({reports : snapshot.val()})
-    })
-  }
   render()
   {
-    return (
-      this.state.reports.map((r,i)  =>
-        {
-          return
-          (
-            <CSSTransitionGroup
-            transitionName="worksTransition"
-            transitionAppear={true}
-            transitionAppearTimeout={500}
-            transitionEnter={false}
-            transitionLeave={false}>
-            <div className="page unconfirmed">
-              <Link to="/"><li className="backToMainPage"></li></Link>
-              <h1 className="Header">Pågående Ärenden</h1>
-              <div className="order">
+    return(
 
-                <p className="contentBold"> ArbetsOrder </p>
-                <p className="contentLight"> {{i}}
+          <CSSTransitionGroup
+          transitionName="worksTransition"
+          transitionAppear={true}
+          transitionAppearTimeout={500}
+          transitionEnter={false}
+          transitionLeave={false}
+          >
 
-                    <div className="Arrow"></div>
-              </div>
+          <div className="page CaseInfo">
+          <Link to="/confirmed"><li className="backToMainPage"></li></Link>
+          <h1 className="Header">Order</h1>
+
+
+          <div className="report">
+            <p className="bold"> ArbetsOrder </p>
+            <p className="light">0</p>
+
+            <p className="bold"> Byggnad </p>
+            <p className="light">Medicinarelängan </p>
+
+            <p className="bold"> Rum </p>
+            <p className="light">1455, 0414, 1245 </p>
+
+            <p className="bold"> KontaktPerson </p>
+            <p className="light">Kenneth Stendahl</p>
+
+            <div className="connectionsBox Mail">
+              <div className="connectionsMail"></div>
+            </div>
+            <div className="checkBox">
+              <div className="checkBoxIcon"></div>
             </div>
 
-            </CSSTransitionGroup>
-          )}
-        }
-        export default unconfirmed
+          </div>
+
+          </div>
+
+          </CSSTransitionGroup>
+
+)
+    }
+  }
+  export default CaseInfo

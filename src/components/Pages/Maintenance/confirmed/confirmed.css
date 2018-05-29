@@ -6,12 +6,6 @@ li {
   margin: 0;
   padding: 0;
 }
-.report{
-  background-color: #f7f7ee;
-  margin: 3px 16px 16px 16px;
-  position: relative;
-  padding:16px;
-}
 .bold {
   display: flex;
   justify-content: flex-start;
@@ -22,7 +16,6 @@ li {
   letter-spacing: 0.4px;
   margin:8px 0px 0px 10px;
 }
-
 .light {
   display: flex;
   justify-content: flex-start;
@@ -35,7 +28,6 @@ li {
   line-height: 19px;
   margin:8px 0px 0px 10px;
 }
-
 .Header {
 	height: 24px;
   color: #000000;
