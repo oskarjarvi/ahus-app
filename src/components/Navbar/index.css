@@ -12,6 +12,7 @@
 
 .navbar.Closed{
   transition: 1s;
+  z-index: 100;
 }
 .navbar.Open {
   height: 57.3vh;

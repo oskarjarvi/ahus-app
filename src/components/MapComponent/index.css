@@ -1,0 +1,16 @@
+.InfoBoxInner {
+  display: flex;
+  justify-content: center;
+  min-height: 83px;
+  min-width: 80px;
+  background-color: white;
+  color: black;
+  padding: 10px;
+}
+
+.InfoBoxInnerText {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Open Sans";
+  font-size: 18px;
+}

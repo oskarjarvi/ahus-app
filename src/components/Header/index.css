@@ -21,6 +21,18 @@
     font-weight: 300;
     letter-spacing: 0.26px;
     line-height: 14px;
+    animation-name: example;
+    animation-duration: 2s;
+    opacity: 1;
+}
+
+@keyframes example {
+    0% {transform: translateY(10px);
+    opacity: 0;}
+    50% {transform: translateY(10px);
+          opacity: 0;}
+    100% {transform: translateY(0px);
+    opacity: 1;}
 }
 .messageBold {
   height: 17px;
@@ -42,7 +54,6 @@
   font-weight: 300;
   letter-spacing: 0.26px;
   line-height: 14px;
-  margin-left: 8px;
   margin-right: 16px;
 }
 .notificationIcon {
@@ -56,7 +67,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  animation-name: example;
+  animation-duration: 2s;
+  opacity: 1;
 }
+
 .errIcon {
   box-sizing: border-box;
   background-image: url('../icons/driftstorning.svg');

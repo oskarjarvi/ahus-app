@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import Button from '../LoginComponents/Button';
-import MyFancyComponent from '../MapComponent/Container';
+import MapComp from '../MapComponent/MapComp';
 import './index.css';
 class HamburgerNavigation extends Component {
   constructor(props) {
@@ -14,7 +14,7 @@ class HamburgerNavigation extends Component {
   }
   eventHandler(event) {
     this.setState(prevState => ({
-      map: !prevState.map,
+      map: prevState.map,
       login: !prevState.login
     }));
   }
@@ -28,16 +28,16 @@ class HamburgerNavigation extends Component {
     <div className="myCampus"></div>
     <h2 className="chooseCampus">VÄLJ CAMPUS</h2>
     <ul className="firstMenu">
+
       <Link to="/"><li className="box">SÖK</li></Link>
 
-      <Link to="/MyFancyComponent">
+        <Link to="/MapComp">
         <li className="box">
           {this.state.map ? (
-            <div className="mapContainer">
-              <MyFancyComponent></MyFancyComponent>
-            </div>) : <div onClick={this.eventHandler.map}>ANVÄND MIN POSITION</div>}
+            <MapComp />
+            ) : <div onClick={this.eventHandler.map}>ANVÄND MIN POSITION</div>}
         </li>
-      </Link>
+        </Link>
 
 
       <Link to="/"><li className="box">SENAST VALDA</li></Link>
