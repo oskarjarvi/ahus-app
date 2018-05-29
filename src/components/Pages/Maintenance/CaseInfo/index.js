@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import base from '../../../base';
-import './index.css';
+import './CaseInfo.css';
 
 
 class confirmed extends Component

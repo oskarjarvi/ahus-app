@@ -2,7 +2,7 @@ import React ,{ Component } from "react";
 import base from '../../../base';
 import {CSSTransitionGroup} from "react-transition-group";
 import { Link } from 'react-router-dom';
-import './index.css';
+import './unconfirmed.css';
 
 
 class unconfirmed extends Component
@@ -72,7 +72,7 @@ snapshotToArray(snapshot) {
             <p className="contentBold"> KontaktPerson </p>
             <p className="content">{r.name} </p>
 
-            
+
             </div>
             </CSSTransitionGroup>
           )

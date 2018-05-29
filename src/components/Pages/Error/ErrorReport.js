@@ -3,7 +3,7 @@ import {CSSTransitionGroup} from "react-transition-group";
 import { Link } from 'react-router-dom';
 import '../../../App.css';
 import base from '../../base';
-import './index.css';
+import './error.css';
 
 class ErrorReport extends Component {
   constructor(props) {

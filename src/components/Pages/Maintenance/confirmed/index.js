@@ -2,7 +2,7 @@ import React ,{ Component } from "react";
 import base from '../../../base';
 import {CSSTransitionGroup} from "react-transition-group";
 import { Link } from 'react-router-dom';
-import './index.css';
+import './confirmed.css';
 
 
 class confirmed extends Component

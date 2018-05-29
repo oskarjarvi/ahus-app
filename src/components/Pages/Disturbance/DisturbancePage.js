@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import {CSSTransitionGroup} from "react-transition-group";
 import { Link } from 'react-router-dom';
-import './index.css';
+import './disturbance.css';
 class DisturbancePage extends Component {
   constructor(props) {
     super(props);

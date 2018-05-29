@@ -14,8 +14,8 @@ class HeaderHomePage extends Component {
         <p className="messageBold">Oberoende busstider och försenade tåg</p>
         <p className="messagelight">Pga. tekniska fel på SL’s huvudkontor så är idag…</p>
 
-          <Navigation> </Navigation>
-          <ExtraRoutes> </ExtraRoutes>
+          <Navigation />
+          <ExtraRoutes />
 
       </div>
   </div>)

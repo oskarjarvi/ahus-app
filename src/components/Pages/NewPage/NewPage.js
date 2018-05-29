@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import {CSSTransitionGroup} from "react-transition-group";
 import { Link } from 'react-router-dom';
 import '../../../App.css';
-import './index.css'
+import './NewPage.css'
 
 class NewPage extends Component {
   constructor(props) {

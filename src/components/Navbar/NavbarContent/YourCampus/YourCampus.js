@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import '../NavbarContent.css';
-import './index.css';
+import './campus.css';
 class YourCampus extends Component {
   render(){
     return (
