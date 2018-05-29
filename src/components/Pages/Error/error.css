@@ -102,14 +102,15 @@
 }
 .gdprInfo {
   margin-left: 16px;
-	height: 96px;
-  width: 311px;
+  height: 96px;
+  width: 289px;
   opacity: 0.75;
   color: #FFFFFF;
   font-family: "Open Sans";
   font-size: 16px;
   font-weight: 300;
   line-height: 21px;
+  text-align: start;
 }
 .cross {
   height: 24px;

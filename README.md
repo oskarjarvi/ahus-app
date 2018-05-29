@@ -2,7 +2,7 @@
 <img src="https://media.giphy.com/media/xULW8KSH61lY0yobwQ/giphy.gif" alt="02 - Logic & Presentation" width="100%">
 </p>
 
-# STILL IN DEVELOPMENT
+# Akademiska Hus Assignment
 
 A Progressive Web App made for Akademiska Hus, using [firebase](https://firebase.google.com/) and [react](https://reactjs.org/).
 

@@ -7,7 +7,6 @@ import School from './components/School';
 import Navbar from './components/Navbar';
 import { Link } from 'react-router-dom';
 import './App.css';
-import MapContainer from './components/MapComponent/MapContainer';
 
 
 class App extends Component {
