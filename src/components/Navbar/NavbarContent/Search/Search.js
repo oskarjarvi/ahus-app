@@ -6,7 +6,7 @@ class Search extends Component {
     return (
       <div className="searchWrapper">
         <div className="searchIcon"></div>
-        <h1 className="seachName">Search</h1>  
+        <h1 className="searchName">Sök</h1>  
       </div>
     )
   }

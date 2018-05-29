@@ -4,8 +4,7 @@
 }
 .yourCampusName {
   height: 24px;
-  width: 115px;
-  color: #FFFFFF;
+  letter-spacing: 1.5px;
   font-family: "Chronicle Deck Cond";
   font-size: 24px;
   font-weight: 600;

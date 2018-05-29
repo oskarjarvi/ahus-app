@@ -35,6 +35,20 @@
   line-height: 17px;
   text-align: center;
 }
+
+.linkText {
+  width: 71px;
+  font-family: "Open Sans";
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  line-height: 16px;
+  text-align: center;
+}
+.Plus {
+  margin-bottom: -11px;
+}
+/* houseEvents page */
 .houseEvents {
   background-color: #EE7F00;
   display: flex;
@@ -85,7 +99,7 @@
 .eventLinkIcon {
   background-image: url('../icons/ballong.svg');
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 100%;
 	height: 40px;
   width: 29.87px;
   margin-bottom: 19px;
