@@ -1,16 +1,18 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './index.css';
+
 const Navigation = () => (
+
   <div className="sidebar">
     <ul className="sidebarMenu">
       <Link to="/">
         <li className="sidebarLink houseEvents">
-          <div className="houseEventsLinkIcon"></div> 
+          <div className="houseEventsLinkIcon"></div>
           På gång i huset
         </li>
       </Link>
-      <Link to="/MyConnections">
+      <Link to={!user? "/MyConnections" : "/unconfirmed"}>
         <li className="sidebarLink myConnections">
           <div className="connectionsLinkIncon"></div>
           Mina Kontaker</li>
@@ -21,7 +23,7 @@ const Navigation = () => (
           Felanmälan
         </li>
       </Link>
-      <Link to="/EventPage">
+      <Link to={!user? "/eventPage" : "/unconfirmed"}>
         <li className="sidebarLink eventPage">
           <div className="eventLinkIcon"></div>
           Eventsida

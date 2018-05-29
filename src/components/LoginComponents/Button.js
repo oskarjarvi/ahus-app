@@ -24,6 +24,7 @@ componentDidMount(){
         this.setState({ user: null});
       }
     });
+
   }
 
   render(){

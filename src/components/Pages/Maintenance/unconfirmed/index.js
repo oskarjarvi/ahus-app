@@ -42,6 +42,8 @@ snapshotToArray(snapshot) {
   console.log("The read failed: " + errorObject.code);
 }
   }
+
+
   render()
   {
     return this.state.reports.map((r,i) =>
@@ -51,15 +53,19 @@ snapshotToArray(snapshot) {
             transitionAppear={true}
             transitionAppearTimeout={500}
             transitionEnter={false}
-            transitionLeave={false}>
+            transitionLeave={false}
+            key = {i}>
 
             <div className="page unconfirmed">
             <Link to="/"><li className="backToMainPage"></li></Link>
             <h1 className="Header">Obekräftade Felanmälningar</h1>
-            <div className="order">
+
             <p className="contentBold"> ArbetsOrder </p>
-            <p className="content" key ={i}> </p>
-            </div>
+            <p className="content">{i} </p>
+
+            <p className="contentBold"> ArbetsOrder </p>
+            <p className="content">{r.email} </p>
+
             </div>
             </CSSTransitionGroup>
           )

@@ -11,7 +11,8 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      toggle: false
+      toggle: false,
+      user: '',
     };
     this.eventHandler = this.eventHandler.bind(this);
   }
@@ -20,8 +21,6 @@ class App extends Component {
       toggle: !prevState.toggle
     }));
   }
-
-
 
 
   render() {
@@ -37,7 +36,7 @@ class App extends Component {
               <div className="sidebarPosition">
                 <Sidebar>
                 </Sidebar>
-                <Navigation></Navigation>
+                <Navigation user = {this.state.user}></Navigation>
               </div>
               <Navbar />
             </div>) :

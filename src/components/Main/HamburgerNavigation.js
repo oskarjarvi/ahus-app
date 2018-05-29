@@ -19,9 +19,8 @@ class HamburgerNavigation extends Component {
     }));
   }
 
-
-
   render(){
+
     return(
   <div className="firstPage">
     <div className="ahusLogo"></div>
