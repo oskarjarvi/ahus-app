@@ -39,7 +39,7 @@ class Navbar extends Component {
 
             <Main></Main>
             <HamburgerNavigation></HamburgerNavigation>
-        </ul> ) : ""}
+        </ul> ) : <ul className="staticMenu Closed"> </ul>}
 
 
 

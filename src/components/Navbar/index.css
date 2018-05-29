@@ -7,10 +7,11 @@
   left: 16px;
   margin-top: 16px;
   border-radius: 3px;
+  z-index: 10;
 }
 
 .navbar.Closed{
-  transition: 2s;
+  transition: 1s;
 }
 .navbar.Open {
   height: 57.3vh;
@@ -18,7 +19,7 @@
   z-index: 100;
   bottom: 16px;
   left: 16px;
-  transition: 2s;
+  transition: 1s;
 }
 
 .staticMenu {
@@ -32,8 +33,12 @@
   font-size: 24px;
   font-weight: 600;
   line-height: 29px;
+  transition: all 0.8s;
+  z-index: 10;
 }
-
+.staticMenu.Closed {
+  transition: all 0.8s;
+}
 /* Hamburger icon */
 span {
   top: 10px;
