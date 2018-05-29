@@ -22,8 +22,23 @@
     letter-spacing: 0.26px;
     line-height: 14px;
     animation-name: example;
-    animation-duration: 2s;
+    animation-duration: 1s;
     opacity: 1;
+}
+.notificationIcon {
+  height: 56px;
+  width: 56px;
+  border-radius: 3px 0 0 3px;
+  position: absolute;
+  bottom: -1px;
+  left: 16px;
+  background-color: #FFEB00;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation-name: example;
+  animation-duration: 1s;
+  opacity: 1;
 }
 
 @keyframes example {
@@ -56,22 +71,6 @@
   line-height: 14px;
   margin-right: 16px;
 }
-.notificationIcon {
-  height: 56px;
-  width: 56px;
-  border-radius: 3px 0 0 3px;
-  position: absolute;
-  bottom: -1px;
-  left: 16px;
-  background-color: #FFEB00;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  animation-name: example;
-  animation-duration: 2s;
-  opacity: 1;
-}
-
 .errIcon {
   box-sizing: border-box;
   background-image: url('../icons/driftstorning.svg');
