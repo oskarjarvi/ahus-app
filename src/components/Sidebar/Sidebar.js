@@ -4,7 +4,6 @@ import ErrorReport from '../Pages/Error/ErrorReport';
 import EventPage from '../Pages/Event/EventPage';
 import MyConnections from '../Pages/Connections/MyConnections';
 import NewPage from '../Pages/NewPage/NewPage';
-import base from './../base';
 import unconfirmed from '../Pages/Maintenance/unconfirmed';
 import confirmed from '../Pages/Maintenance/confirmed';
 
