@@ -47,8 +47,7 @@ class confirmed extends Component
   render()
   {
     return(
-      <div>
-      <p>WAAH</p>
+
 
           <CSSTransitionGroup
           transitionName="worksTransition"
@@ -57,32 +56,32 @@ class confirmed extends Component
           transitionEnter={false}
           transitionLeave={false}
           >
-          {
-          this.state.reports.map((r,i) => (
-          <div className="page confirmed" key = {i} >
+
+          <div className="page confirmed">
           <Link to="/"><li className="backToMainPage"></li></Link>
           <h1 className="Header">Bekräftade Felanmälningar</h1>
-<div className="report">
-          <p className="contentBold"> ArbetsOrder </p>
-          <p className="content">{i} </p>
+          {
+          this.state.reports.map((r,i) => (
+          <div className="report"key = {i}>
+          <p className="bold"> ArbetsOrder </p>
+          <p className="light">{i} </p>
 
-          <p className="contentBold"> Adress </p>
-          <p className="content">{r.address} </p>
+          <p className="bold"> Byggnad </p>
+          <p className="light">{r.building} </p>
 
-          <p className="contentBold"> Rum </p>
-          <p className="content">{r.roomnumber} </p>
+          <p className="bold"> Rum </p>
+          <p className="light">{r.roomnumber} </p>
 
-          <p className="contentBold"> KontaktPerson </p>
-          <p className="content">{r.name} </p>
+          <p className="bold"> KontaktPerson </p>
+          <p className="light">{r.name} </p>
 
 </div>
-          </div>
 ))
   }
+          </div>
+
           </CSSTransitionGroup>
-
-
-      </div>)
+        )
     }
   }
   export default confirmed

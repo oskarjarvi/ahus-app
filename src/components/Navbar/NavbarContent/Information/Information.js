@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import '../NavbarContent.css';
 import './index.css';
 class Information extends Component {
   render(){

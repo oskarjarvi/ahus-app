@@ -37,7 +37,7 @@ li {
   height: 104px;
   width: 343px;
   background-color: #FFFFFF;
-  margin: 16px;
+  margin: 0px 16px 16px 16px;
   position: relative;
 }
 .newsImage {
@@ -104,7 +104,6 @@ li {
 }
 .newsSchool {
   height: 27px;
-  width: 197px;
   color: #000000;
   font-family: "Chronicle Deck Cond";
   font-size: 16px;
@@ -113,6 +112,7 @@ li {
   line-height: 19px;
   text-align: center;
   margin-top: 18px;
+  margin-bottom: 18px;
 }
 .newsArrow {
   background-image: url('../../icons/framot_pil.svg');

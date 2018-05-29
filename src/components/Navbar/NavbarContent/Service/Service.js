@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import '../NavbarContent.css';
 import './service.css';
 class Service extends Component {
   render(){

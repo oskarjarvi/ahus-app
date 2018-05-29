@@ -13,7 +13,7 @@
 .connectionsIcon {
   background-image: url('../../icons/kontakter_green.svg');
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: contain;
   height: 55.81px;
   width: 42.38px;
   margin-bottom: 15px;
@@ -43,12 +43,12 @@
   border-radius: 3px;
   position: absolute;
 }
-.Phone {
+.connectionsBox.Phone {
   background-color: #6EC81E;
   right: 16px;
   bottom: 8px;
 }
-.Mail {
+.connectionsBox.Mail {
   right: 80px;
   bottom: 8px;
   background-color: #0094BB;

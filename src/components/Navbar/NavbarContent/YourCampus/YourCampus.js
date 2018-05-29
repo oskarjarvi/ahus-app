@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import '../NavbarContent.css';
 import './campus.css';
 class YourCampus extends Component {
   render(){

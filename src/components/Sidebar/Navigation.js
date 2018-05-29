@@ -12,10 +12,10 @@ const Navigation = () => (
             <p className="linkText">AKTUELLT</p>
         </li>
       </Link>
-      <Link to="/MyConnections">
+      <Link to="/confirmed">
         <li className="sidebarLink myConnections">
           <div className="connectionsLinkIncon"></div>
-          <p className="linkText">KONTAKTER</p>
+          <p className="linkText">confirmed</p>
         </li>
       </Link>
       <Link to="/ErrorReport">
