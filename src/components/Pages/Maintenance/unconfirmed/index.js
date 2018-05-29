@@ -63,9 +63,16 @@ snapshotToArray(snapshot) {
             <p className="contentBold"> ArbetsOrder </p>
             <p className="content">{i} </p>
 
-            <p className="contentBold"> ArbetsOrder </p>
-            <p className="content">{r.email} </p>
+            <p className="contentBold"> Adress </p>
+            <p className="content">{r.address} </p>
 
+            <p className="contentBold"> Rum </p>
+            <p className="content">{r.roomnumber} </p>
+
+            <p className="contentBold"> KontaktPerson </p>
+            <p className="content">{r.name} </p>
+
+            
             </div>
             </CSSTransitionGroup>
           )

@@ -12,7 +12,7 @@ const Navigation = () => (
           På gång i huset
         </li>
       </Link>
-      <Link to={!user? "/MyConnections" : "/unconfirmed"}>
+      <Link to="!user? /MyConnections : /unconfirmed">
         <li className="sidebarLink myConnections">
           <div className="connectionsLinkIncon"></div>
           Mina Kontaker</li>
@@ -23,7 +23,7 @@ const Navigation = () => (
           Felanmälan
         </li>
       </Link>
-      <Link to={!user? "/eventPage" : "/unconfirmed"}>
+      <Link to={"!user? /eventPage : /unconfirmed"}>
         <li className="sidebarLink eventPage">
           <div className="eventLinkIcon"></div>
           Eventsida

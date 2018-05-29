@@ -16,6 +16,7 @@ render(){
       <Route exact path="/ErrorReport" component={ErrorReport}/>
       <Route exact path="/MyConnections" component={MyConnections}/>
       <Route exact path="/unconfirmed" component={unconfirmed}/>
+      <Route exact path="/confirmed" component={confirmed}/>
       <Route exact path="/EventPage" component={EventPage}/>
       <Route exact path="/NewPage" component={NewPage}/>
     </Switch>
