@@ -1,0 +1,49 @@
+.page {
+  background-color: #f9f9f9;
+}
+.extraBox {
+  height: 40px;
+  width: 291px;
+  background-color: #FFFFFF;
+  position: relative;
+  display: flex;
+  margin-right: 4px;
+}
+.extraContent {
+  display: flex;
+  align-items: center;
+  color: #000000;
+  font-family: "Open Sans";
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  line-height: 17px;
+}
+.extraText {
+  margin-left: 16px;
+}
+.extraPlus {
+  height: 40px;
+  width: 56px;
+  margin-right: 4px;
+  background-color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.extraWrapper {
+  margin: 16px 4px 16px 16px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.plus {
+  background-image: url('../../icons/laggTill.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 16px;
+  width: 16px;
+}
+.extraPageWrapper {
+  margin-top: 60px;
+}

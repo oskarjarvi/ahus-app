@@ -1,0 +1,25 @@
+.school {
+  display: flex;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  margin-top: 12px;
+}
+.schoolIcon {
+  background-image: url('../icons/Kth_logo.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 48px;
+  width: 42.69px;
+  margin: 0 auto;
+}
+.schoolName {
+  margin-top: 11px;
+  color: #424242;
+  font-family: "Chronicle Deck Cond";
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+  line-height: 19px;
+}
