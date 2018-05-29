@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import base from '../base';
+import base from '../Config/base';
 import { Link } from 'react-router-dom';
 import './index.css';
 class Login extends Component {
@@ -31,18 +31,18 @@ class Login extends Component {
     return(
       <div>
         <form className="loginForm">
-          <p className="loginHeader">Logga in som anställd</p>
+          <h1 className="loginHeader">Logga in som anställd</h1>
           <div className="loginInput">
-            <label className="loginLabel" htmlFor="InputEmail">Mail</label>
-            <input value={this.state.email} onChange={this.handleChange} type="email" name="email"
+            <label className="loginLabel Mail" htmlFor="InputEmail">Mail</label>
+            <input className="loginContent" value={this.state.email} onChange={this.handleChange} type="email" name="email"
               id="InputEmail" aria-describedby="emailHelp"/>
           </div>
           <div className="loginInput">
             <label className="loginLabel" htmlFor="InputPassword">Password</label>
-            <input value={this.state.password} onChange={this.handleChange} type="password" name="password"
+            <input  className="loginContent" value={this.state.password} onChange={this.handleChange} type="password" name="password"
               id="InputPassword"/>
           </div>
-        <button className="loginButton" type="submit" onClick={this.login}>Login</button>
+        <button className="loginButton" type="submit" onClick={this.login}>Logga in</button>
         <Link to="/"><div className="cross"></div></Link>
         </form>
       </div>

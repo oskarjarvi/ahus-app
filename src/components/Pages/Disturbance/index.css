@@ -1,0 +1,38 @@
+li {
+  list-style: none;
+}
+
+.disturbanceIcon {
+  background-image: url('../../icons/driftstorning.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-bottom: 40px;
+  height: 55.81px;
+  width: 42.38px;
+}
+
+.iconWrapper {
+  float: left;
+  height: 104px;
+  width: 104px;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFEB00;
+}
+.disturbanceImage {
+  background-image: url('../../icons/hjalm.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 32px;
+  width: 50.66px;
+}
+
+.disturbanceImage.Two {
+  background-image: url('../../icons/vatten_stopp.svg');
+}
+
+.disturbanceImage.Three {
+  background-image: url('../../icons/mala.svg');
+}

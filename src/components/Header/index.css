@@ -1,6 +1,6 @@
 .headerHome {
   height: 257px;
-  width: 375px;
+  width: 100vw;
   background-image: url('../icons/kthSchool.png');
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -21,6 +21,33 @@
     font-weight: 300;
     letter-spacing: 0.26px;
     line-height: 14px;
+    animation-name: example;
+    animation-duration: 1.6s;
+    opacity: 1;
+}
+.notificationIcon {
+  height: 56px;
+  width: 56px;
+  border-radius: 3px 0 0 3px;
+  position: absolute;
+  bottom: -1px;
+  left: 16px;
+  background-color: #FFEB00;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation-name: example;
+  animation-duration: 1.6s;
+  opacity: 1;
+}
+
+@keyframes example {
+    0% {transform: translateY(10px);
+    opacity: 0;}
+    50% {transform: translateY(10px);
+          opacity: 0;}
+    100% {transform: translateY(0px);
+    opacity: 1;}
 }
 .messageBold {
   height: 17px;
@@ -42,20 +69,7 @@
   font-weight: 300;
   letter-spacing: 0.26px;
   line-height: 14px;
-  margin-left: 8px;
   margin-right: 16px;
-}
-.notificationIcon {
-  height: 56px;
-  width: 56px;
-  border-radius: 3px 0 0 3px;
-  position: absolute;
-  bottom: -1px;
-  left: 16px;
-  background-color: #FFEB00;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .errIcon {
   box-sizing: border-box;
@@ -68,11 +82,11 @@
 .arrow {
   background-image: url('../icons/framot_pil.svg');
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: contain;
   height: 13px;
   width: 16.49px;
   position: absolute;
   top: 26px;
-  right: 11.51px;
+  right: 2.51px;
   bottom: 22px;
 }

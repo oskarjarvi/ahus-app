@@ -14,11 +14,12 @@
   margin-right: 8px;
   margin-top: 3px;
 }
-.seachName {
+.searchName {
   height: 24px;
   width: 35px;
   font-family: "Chronicle Deck Cond";
   font-size: 24px;
   font-weight: 600;
   line-height: 29px;
+  letter-spacing: 1.5px;
 }

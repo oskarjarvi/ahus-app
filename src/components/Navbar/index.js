@@ -16,19 +16,19 @@ class Navbar extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      toggle: false
+      navbar: false
     };
     this.eventHandler = this.eventHandler.bind(this);
   }
   eventHandler(event) {
     this.setState(prevState => ({
-      toggle: !prevState.toggle
+      navbar: !prevState.navbar
     }));
   }
   render() {
     return (
-      <div className={this.state.toggle ? "navbar Open" : "navbar Closed"}>
-        {this.state.toggle ? (
+      <div className={this.state.navbar ? "navbar Open" : "navbar Closed"}>
+        {this.state.navbar ? (
         <ul className="staticMenu">
           <Search />
           <YourCampus />
@@ -39,12 +39,12 @@ class Navbar extends Component {
 
             <Main></Main>
             <HamburgerNavigation></HamburgerNavigation>
-        </ul> ) : ""}
+        </ul> ) : <ul className="staticMenu Closed"> </ul>}
 
 
 
         <button
-          className={this.state.toggle ? "navToggle Active" : "navToggle "}
+          className={this.state.navbar ? "navToggle Active" : "navToggle "}
           onClick={this.eventHandler}
         >
           <span />

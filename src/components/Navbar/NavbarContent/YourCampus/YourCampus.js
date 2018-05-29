@@ -5,7 +5,7 @@ class YourCampus extends Component {
   render(){
     return (
       <div className="yourCampusWrapper">
-        <h1 className="yourCampusName">Ditt Campus</h1>
+        <h1 className="yourCampusName">Mitt Campus</h1>
       </div>
     )
   }

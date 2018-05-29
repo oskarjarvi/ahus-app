@@ -1,14 +1,11 @@
-.houseguideWrapper {
+.serviceWrapper {
   margin-bottom: 24px;
   margin-left: 16px;
 }
-
-.houseguideName {
-  height: 24px;
-  width: 96px;
+.serviceName {
+  letter-spacing: 1.5px;
   font-family: "Chronicle Deck Cond";
   font-size: 24px;
   font-weight: 600;
   line-height: 29px;
-  letter-spacing: 1.5px;
 }

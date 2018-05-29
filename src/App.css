@@ -1,7 +1,8 @@
 @font-face {
   font-family: 'Chronicle Deck Cond';
-  src: url('/Font/ChronicleDeckCond-Semibold.otf');
+  src: url('/Font/ChronicleDispLight.woff2');
 }
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
 html,body{
   padding: 0;
   margin: 0;
@@ -30,4 +31,16 @@ html,body{
 }
 .page {
   color: black;
+}
+
+.toggleLink {
+height: 113px;
+width: 87px;
+position: relative;
+left: 76px;
+bottom: 450px;
+}
+
+.homePageWrapper {
+  width: 100%;
 }

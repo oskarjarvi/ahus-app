@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import base from '../base';
+import base from '../Config/base';
 import './index.css';
 class HomeForWorkers extends Component {
   constructor(props) {

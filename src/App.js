@@ -5,20 +5,22 @@ import Navigation from './components/Sidebar/Navigation';
 import HeaderHomePage from './components/Header';
 import School from './components/School';
 import Navbar from './components/Navbar';
+import { Link } from 'react-router-dom';
 import './App.css';
+import MapContainer from './components/MapComponent/MapContainer';
+
 
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      toggle: false,
-      user: '',
+      homepage: false
     };
     this.eventHandler = this.eventHandler.bind(this);
   }
   eventHandler(event) {
     this.setState(prevState => ({
-      toggle: !prevState.toggle
+      homepage: !prevState.homepage
     }));
   }
 
@@ -29,22 +31,23 @@ class App extends Component {
         <header>
 
         </header>
-          {this.state.toggle ?
-            ( <div>
+          {this.state.homepage ?
+            ( <div className="homePageWrapper">
               <HeaderHomePage></HeaderHomePage>
               <School></School>
               <div className="sidebarPosition">
                 <Sidebar>
                 </Sidebar>
-                <Navigation user = {this.state.user}></Navigation>
+                <Navigation></Navigation>
               </div>
               <Navbar />
             </div>) :
           ( <div>
               <StartPage></StartPage>
+              <Link to="/"><li className="toggleLink" onClick={this.eventHandler}></li></Link>
+
             </div> ) }
 
-          <button onClick={this.eventHandler}>testetet</button>
 
       </div>
     );

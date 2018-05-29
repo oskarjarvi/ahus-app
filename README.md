@@ -11,6 +11,7 @@ A Progressive Web App made for Akademiska Hus, using [firebase](https://firebase
 - Download or clone the project
 - Create a new textfile in the root of the project and name it .env
 - Copy the content from the file .env.example (located in the project root) and paste it in the file you just created
+- Fill in your credentials
 - Navigate with the command prompt to the root file of the project
 - Run commands:
 ```sh
@@ -25,7 +26,7 @@ A Progressive Web App made for Akademiska Hus, using [firebase](https://firebase
 [Oskar Järviniemi](https://github.com/oskarjarvi)  
 
 ### Designers:
-Robin Håkansson
+Robin Håkansson <br/>
 Karl-Anton Svensson
 
 ## License

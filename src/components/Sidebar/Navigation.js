@@ -9,35 +9,36 @@ const Navigation = () => (
       <Link to="/">
         <li className="sidebarLink houseEvents">
           <div className="houseEventsLinkIcon"></div>
-          På gång i huset
+            <p className="linkText">AKTUELLT</p>
         </li>
       </Link>
       <Link to="/MyConnections">
         <li className="sidebarLink myConnections">
           <div className="connectionsLinkIncon"></div>
-          Mina Kontaker</li>
+          <p className="linkText">KONTAKTER</p>
+        </li>
       </Link>
       <Link to="/ErrorReport">
         <li className="sidebarLink errorPage">
           <div className="errorLinkIcon"></div>
-          Felanmälan
+          <p className="linkText">FELANMÄLAN</p>
         </li>
       </Link>
       <Link to={"EventPage"}>
         <li className="sidebarLink eventPage">
           <div className="eventLinkIcon"></div>
-          Eventsida
+          <p className="linkText">EVENT</p>
         </li>
       </Link>
       <Link to="/">
         <li className="sidebarLink mapPage">
           <div className="mapLinkMap"></div>
-          Karta
+          <p className="linkText">KARTA</p>
         </li>
       </Link>
       <Link to="/NewPage"><li className="sidebarLink extraPage">
         <div className="extraLinkPlus"></div>
-          Lägg till ny genväg
+          <p className="linkText Plus">LÄGG TILL NY GENVÄG</p>
         </li>
       </Link>
     </ul>
