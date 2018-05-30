@@ -23,15 +23,9 @@ class App extends Component {
     }));
   }
 
-
-
-
   render() {
     return (
       <div className="App">
-        <header>
-
-        </header>
           {this.state.homepage ?
             ( <div className="homePageWrapper">
               <HeaderHomePage></HeaderHomePage>
@@ -45,11 +39,10 @@ class App extends Component {
             </div>) :
           ( <div>
               <StartPage></StartPage>
-              <Link to="/"><li className="toggleLink" onClick={this.eventHandler}></li></Link>
-
+              <Link to="/">
+                <li className="toggleLink" onClick={this.eventHandler}></li>
+              </Link>
             </div> ) }
-
-
       </div>
     );
   }

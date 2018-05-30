@@ -4,8 +4,6 @@ import HomeForWorkers from '../LoginComponents/HomeForWorkers';
 import Button from '../LoginComponents/Button';
 import MapComp from '../MapComponent/MapComp';
 
-
-
 class Main extends Component {
 render(){
   return(
