@@ -76,14 +76,14 @@ class ErrorReport extends Component {
             <div>
               <label className ="labelForName" htmlFor="building">Byggnad på campus*</label>
             </div>
-            <input className ="inputForName" value={this.state.building} onChange={this.handleChange} type="text" placeholder=" t.ex. KTH Hallen" name="building" required />
+            <input className ="inputForName Building" value={this.state.building} onChange={this.handleChange} type="text" placeholder=" t.ex. KTH Hallen" name="building" required />
           </div>
 
           <div className="formWrapper">
             <div>
               <label className ="labelForName" htmlFor="roomnumber">Rum/rumsnr*</label>
             </div>
-            <input className ="inputForName" value={this.state.roomnumber} onChange={this.handleChange} type="text" name="roomnumber" required />
+            <input className ="inputForRoomnumber" value={this.state.roomnumber} onChange={this.handleChange} type="text" name="roomnumber" required />
           </div>
 
           <div className="formWrapper">
@@ -106,12 +106,11 @@ class ErrorReport extends Component {
             </div>
             <input className ="inputForName" value={this.state.phone} onChange={this.handleChange} type="text" placeholder=" För att kunna återkoppla" name="phone" required />
           </div>
-
-    <p className="gdprInfo">Eran information kommer endast användas i syfte för att åtgärda det
-     problem som anmälts. Efter genomfört arbete raderas er information
-     från våran databas.</p>
-   <button className={this.handleChange ? "buttonForForm" : "buttonForForm Active"} type="submit" onClick={this.errorReport}>Skicka in</button>
-    <Link to="/"><div className="cross"></div></Link>
+          <p className="gdprInfo">Eran information kommer endast användas i syfte för att åtgärda det
+            problem som anmälts. Efter genomfört arbete raderas er information
+            från våran databas.</p>
+      <button className={this.handleChange ? "buttonForForm" : "buttonForForm Active"} type="submit" onClick={this.errorReport}>Skicka in</button>
+      <Link to="/"><div className="cross"></div></Link>
     </form>
      </div>
   </CSSTransitionGroup>

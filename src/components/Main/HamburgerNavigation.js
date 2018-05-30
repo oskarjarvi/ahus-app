@@ -37,18 +37,12 @@ class HamburgerNavigation extends Component {
             ) : <div onClick={this.eventHandler.map}>ANVÄND MIN POSITION</div>}
         </li>
         </Link>
-
-
       <Link to="/"><li className="box">SENAST VALDA</li></Link>
       <Link to="/Button"><li className="box login">
         {this.state.login ?
-          <div class="test">
              <Button></Button>
-           </div>
          : <div onClick={this.eventHandler.login}>LOGGA IN SOM ANSTÄLLD</div> }
       </li></Link>
-
-
     </ul>
   </div>
     )

@@ -35,8 +35,11 @@
   font-size: 16px;
   font-weight: 600;
   line-height: 22px;
+  margin-bottom: 15px;
 }
-
+.inputForName.Building {
+  width: 256px;
+}
 .inputForName {
 	height: 32px;
   width: 311px;
@@ -46,6 +49,23 @@
   border: none;
 }
 .inputForName::placeholder {
+  opacity: 0.25;
+  color: #424242;
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 22px;
+  padding-left: 16px;
+}
+.inputForRoomnumber {
+  height: 32px;
+  width: 112px;
+  border-radius: 3px;
+  background-color: #FFFFFF;
+  outline: none;
+  border: none;
+}
+.inputForRoomnumber::placeholder {
   opacity: 0.25;
   color: #424242;
   font-family: "Open Sans";
